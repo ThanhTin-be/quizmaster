@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react';
-import type { Deck, Question } from './types';
+import type { Deck, Question, MockTestConfig, MockTestHistoryItem } from './types';
 import { Header } from './components/Header';
 import { Dashboard } from './components/Dashboard';
 import { ImportDeck } from './components/ImportDeck';
 import { FlashcardView } from './components/FlashcardView';
 import { QuizView } from './components/QuizView';
 import { ReviewView } from './components/ReviewView';
+import { Sidebar } from './components/Sidebar';
+import { MockTestDashboard } from './components/MockTestDashboard';
+import { MockTestPlay } from './components/MockTestPlay';
 
 const LOCAL_STORAGE_KEY = 'quizmaster_decks';
 
@@ -20,7 +23,6 @@ const parseCustomFormat = (text: string): Question[] => {
     const options: string[] = [];
     let correctAnswer = '';
     let explanation = '';
-    let isSolvedByAi = false;
     
     const lines = block.split('\n');
     lines.forEach(line => {
@@ -29,26 +31,30 @@ const parseCustomFormat = (text: string): Question[] => {
       
       if (trimmed.startsWith('Q:') || trimmed.startsWith('Câu hỏi:')) {
         questionText = trimmed.replace(/^(Q:|Câu hỏi:)\s*/, '').trim();
+        // Strip leading question number: "1. Question" → "Question"
+        questionText = questionText.replace(/^\d+[\.\)\s]+\s*/, '');
       } else if (trimmed.match(/^[A-D][.:)]\s*/i)) {
         options.push(trimmed);
-      } else if (trimmed.startsWith('K:') || trimmed.startsWith('Đáp án:') || trimmed.startsWith('Key:')) {
-        correctAnswer = trimmed.replace(/^(K:|Đáp án:|Key:)\s*/, '').trim().toUpperCase().charAt(0);
-      } else if (trimmed.startsWith('E:') || trimmed.startsWith('Giải thích:')) {
-        explanation = trimmed.replace(/^(E:|Giải thích:)\s*/, '').trim();
-      } else if (trimmed.startsWith('S:') || trimmed.startsWith('AI:')) {
-        const val = trimmed.replace(/^(S:|AI:)\s*/, '').trim().toLowerCase();
-        isSolvedByAi = val === 'true' || val === 'yes' || val === '1';
+      } else if (/^(ANS|K|Đáp án|Key|Answer|Correct):/i.test(trimmed)) {
+        const val = trimmed.replace(/^(ANS|K|Đáp án|Key|Answer|Correct):\s*/i, '').trim();
+        if (val) {
+          correctAnswer = val.toUpperCase().charAt(0);
+        }
+      } else if (/^(EXP|E|Giải thích|Explain|Explanation):/i.test(trimmed)) {
+        explanation = trimmed.replace(/^(EXP|E|Giải thích|Explain|Explanation):\s*/i, '').trim();
       }
+      // S: / AI: lines are intentionally ignored (isSolvedByAi removed from prompt)
     });
     
-    if (questionText && options.length >= 2 && correctAnswer) {
+    // Allow import even without correct answer — mark as "?" so user can fix later
+    if (questionText && options.length >= 2) {
       questions.push({
         id: `q_txt_${Date.now()}_${index}`,
         question: questionText,
         options,
-        correctAnswer,
+        correctAnswer: correctAnswer || '?',
         explanation: explanation || undefined,
-        isSolvedByAi
+        isSolvedByAi: false
       });
     }
   });
@@ -61,10 +67,17 @@ const parseCustomFormat = (text: string): Question[] => {
 
 function App() {
   const [decks, setDecks] = useState<Deck[]>([]);
-  const [currentView, setCurrentView] = useState<'dashboard' | 'import' | 'flashcard' | 'quiz' | 'review'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'import' | 'flashcard' | 'quiz' | 'review' | 'mock-test-dashboard' | 'mock-test-play' | 'mock-test-results'>('dashboard');
   const [selectedDeckId, setSelectedDeckId] = useState<string | null>(null);
+  const [theme, setTheme] = useState<'dark' | 'light' | 'pink-dark' | 'pink-light'>('dark');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [mockTestHistory, setMockTestHistory] = useState<MockTestHistoryItem[]>([]);
+  const [activeMockTestConfig, setActiveMockTestConfig] = useState<MockTestConfig | null>(null);
+  const [viewingHistoryItem, setViewingHistoryItem] = useState<MockTestHistoryItem | null>(null);
 
-  // Load decks on mount
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+
+  // Load decks, theme, and test history on mount
   useEffect(() => {
     const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
     if (saved) {
@@ -74,11 +87,67 @@ function App() {
         console.error('Error parsing saved decks:', e);
       }
     }
+
+    const savedTheme = localStorage.getItem('theme') as 'dark' | 'light' | 'pink-dark' | 'pink-light' | null;
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+
+    const savedHistory = localStorage.getItem('quizmaster_mock_history');
+    if (savedHistory) {
+      try {
+        setMockTestHistory(JSON.parse(savedHistory));
+      } catch (e) {
+        console.error('Error parsing mock test history:', e);
+      }
+    }
   }, []);
+
+  const handleThemeChange = (nextTheme: 'dark' | 'light' | 'pink-dark' | 'pink-light') => {
+    setTheme(nextTheme);
+    localStorage.setItem('theme', nextTheme);
+    document.documentElement.setAttribute('data-theme', nextTheme);
+  };
 
   const saveDecks = (updatedDecks: Deck[]) => {
     setDecks(updatedDecks);
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updatedDecks));
+  };
+
+  // Mock Test Handlers
+  const handleStartTest = (config: MockTestConfig) => {
+    setActiveMockTestConfig(config);
+    setViewingHistoryItem(null);
+    setCurrentView('mock-test-play');
+  };
+
+  const handleSaveMockResult = (result: Omit<MockTestHistoryItem, 'id' | 'date'>) => {
+    const newItem: MockTestHistoryItem = {
+      ...result,
+      id: `mock_history_${Date.now()}`,
+      date: Date.now(),
+    };
+    const updatedHistory = [newItem, ...mockTestHistory];
+    setMockTestHistory(updatedHistory);
+    localStorage.setItem('quizmaster_mock_history', JSON.stringify(updatedHistory));
+  };
+
+  const handleDeleteMockHistory = (id: string) => {
+    const updatedHistory = mockTestHistory.filter(h => h.id !== id);
+    setMockTestHistory(updatedHistory);
+    localStorage.setItem('quizmaster_mock_history', JSON.stringify(updatedHistory));
+    if (viewingHistoryItem?.id === id) {
+      setViewingHistoryItem(null);
+      setCurrentView('mock-test-dashboard');
+    }
+  };
+
+  const handleViewHistoryItem = (item: MockTestHistoryItem) => {
+    setViewingHistoryItem(item);
+    setCurrentView('mock-test-results');
   };
 
   const handleImportDeck = (name: string, jsonString: string, appendToDeckId?: string): boolean => {
@@ -241,6 +310,33 @@ function App() {
             onBack={() => setCurrentView('dashboard')}
           />
         );
+      case 'mock-test-dashboard':
+        return (
+          <MockTestDashboard 
+            decks={decks}
+            onStartTest={handleStartTest}
+            history={mockTestHistory}
+            onDeleteHistoryItem={handleDeleteMockHistory}
+            onViewHistoryItem={handleViewHistoryItem}
+          />
+        );
+      case 'mock-test-play':
+        return (
+          <MockTestPlay 
+            config={activeMockTestConfig!}
+            decks={decks}
+            onSaveResult={handleSaveMockResult}
+            onBack={() => setCurrentView('mock-test-dashboard')}
+          />
+        );
+      case 'mock-test-results':
+        return (
+          <MockTestPlay 
+            decks={decks}
+            onBack={() => setCurrentView('mock-test-dashboard')}
+            reviewItem={viewingHistoryItem!}
+          />
+        );
       case 'dashboard':
       default:
         return (
@@ -255,15 +351,30 @@ function App() {
   };
 
   return (
-    <div className="app-layout">
-      <Header 
-        onGoHome={() => setCurrentView('dashboard')} 
-        onGoImport={() => setCurrentView('import')}
+    <div className={`app-container ${sidebarCollapsed ? 'sidebar-collapsed' : ''}`}>
+      <Sidebar 
+        currentView={currentView}
+        onNavigate={(view) => setCurrentView(view)}
         deckCount={decks.length}
+        isOpen={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
       />
-      <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-        {renderView()}
-      </main>
+      
+      <div className="main-content">
+        <Header 
+          onGoHome={() => setCurrentView('dashboard')} 
+          onGoImport={() => setCurrentView('import')}
+          deckCount={decks.length}
+          theme={theme}
+          onChangeTheme={handleThemeChange}
+          onOpenSidebar={() => setSidebarOpen(true)}
+          isSidebarCollapsed={sidebarCollapsed}
+          onToggleSidebar={() => setSidebarCollapsed(!sidebarCollapsed)}
+        />
+        <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+          {renderView()}
+        </main>
+      </div>
     </div>
   );
 }

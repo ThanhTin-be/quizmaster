@@ -204,7 +204,7 @@ export const QuizView: React.FC<QuizViewProps> = ({ deck, onSaveProgress, onBack
                     ...btnStyle,
                     borderColor: 'rgba(16, 185, 129, 0.5)',
                     background: 'rgba(16, 185, 129, 0.08)',
-                    color: '#ffffff',
+                    color: 'var(--text-primary)',
                   };
                 } else if (isSelected) {
                   // highlight red
@@ -212,7 +212,7 @@ export const QuizView: React.FC<QuizViewProps> = ({ deck, onSaveProgress, onBack
                     ...btnStyle,
                     borderColor: 'rgba(239, 68, 68, 0.5)',
                     background: 'rgba(239, 68, 68, 0.08)',
-                    color: '#ffffff',
+                    color: 'var(--text-primary)',
                   };
                 } else {
                   // muted
@@ -331,7 +331,7 @@ const styles: Record<string, React.CSSProperties> = {
   deckNameTitle: {
     fontSize: 14,
     fontWeight: 700,
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   counterText: {
     fontSize: 13,
@@ -340,7 +340,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   progressLineBg: {
     height: 4,
-    background: '#18181b',
+    background: 'var(--bg-surface-elevated)',
     borderRadius: 2,
     width: '100%',
     marginBottom: 32,
@@ -396,7 +396,7 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 20,
     fontWeight: 600,
     lineHeight: 1.5,
-    color: '#ffffff',
+    color: 'var(--text-primary)',
     marginBottom: 24,
   },
   optionsList: {
@@ -410,7 +410,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '16px 20px',
     borderRadius: '12px',
     border: '1px solid var(--border-muted)',
-    background: 'rgba(255,255,255,0.01)',
+    background: 'var(--bg-surface-elevated)',
     color: 'var(--text-secondary)',
     cursor: 'pointer',
     transition: 'all 200ms ease',
@@ -450,8 +450,8 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 14,
   },
   explanationBox: {
-    background: 'rgba(255,255,255,0.01)',
-    border: '1px solid rgba(255,255,255,0.03)',
+    background: 'rgba(124, 92, 246, 0.03)',
+    border: '1px solid var(--border-muted)',
     borderRadius: '8px',
     padding: '16px',
     textAlign: 'left',
@@ -502,8 +502,8 @@ const styles: Record<string, React.CSSProperties> = {
     gridTemplateColumns: 'repeat(3, 1fr)',
     gap: 16,
     width: '100%',
-    background: 'rgba(255,255,255,0.01)',
-    border: '1px solid rgba(255,255,255,0.03)',
+    background: 'rgba(124, 92, 246, 0.03)',
+    border: '1px solid var(--border-muted)',
     padding: '16px 8px',
     borderRadius: '16px',
     margin: '12px 0',
@@ -516,7 +516,7 @@ const styles: Record<string, React.CSSProperties> = {
   finishedStatValue: {
     fontSize: 22,
     fontWeight: 800,
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   finishedStatLabel: {
     fontSize: 11,
@@ -531,17 +531,3 @@ const styles: Record<string, React.CSSProperties> = {
     marginTop: 8,
   }
 };
-
-// Add standard dynamic CSS for hover effect in a style tag since pseudo-classes aren't directly available in react inline styles
-if (typeof document !== 'undefined') {
-  const styleEl = document.createElement('style');
-  styleEl.innerHTML = `
-    .btn-option-hover:hover {
-      background: rgba(255,255,255,0.05) !important;
-      border-color: rgba(255,255,255,0.15) !important;
-      color: #ffffff !important;
-      transform: translateY(-1px);
-    }
-  `;
-  document.head.appendChild(styleEl);
-}

@@ -20,3 +20,26 @@ export interface Deck {
   createdAt: number;
   progress: DeckProgress;
 }
+
+export interface MockTestConfig {
+  title: string;
+  durationMinutes: number; // 0 = Không giới hạn
+  selectionMode: 'random' | 'sequential';
+  deckAId: string;
+  deckBId?: string;
+  deckAQuestionCount: number;
+  deckBQuestionCount: number;
+}
+
+export interface MockTestHistoryItem {
+  id: string;
+  title: string;
+  date: number;
+  totalQuestions: number;
+  correctAnswers: number;
+  durationMinutes: number; // Thời gian giới hạn cấu hình (phút)
+  timeSpentSeconds: number; // Thời gian làm bài thực tế (giây)
+  questions: Question[]; // Lưu lại câu hỏi để ôn tập/xem lại
+  userAnswers: Record<string, string>; // questionId -> đáp án đã chọn (A, B, C, D...)
+}
+

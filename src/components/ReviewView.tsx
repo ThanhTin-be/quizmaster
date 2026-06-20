@@ -162,14 +162,14 @@ export const ReviewView: React.FC<ReviewViewProps> = ({ deck, onSaveProgress, on
                     ...btnStyle,
                     borderColor: 'rgba(16, 185, 129, 0.5)',
                     background: 'rgba(16, 185, 129, 0.08)',
-                    color: '#ffffff',
+                    color: 'var(--text-primary)',
                   };
                 } else if (isSelected) {
                   btnStyle = {
                     ...btnStyle,
                     borderColor: 'rgba(239, 68, 68, 0.5)',
                     background: 'rgba(239, 68, 68, 0.08)',
-                    color: '#ffffff',
+                    color: 'var(--text-primary)',
                   };
                 } else {
                   btnStyle = {
@@ -287,7 +287,7 @@ const styles: Record<string, React.CSSProperties> = {
   deckNameTitle: {
     fontSize: 14,
     fontWeight: 700,
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   counterText: {
     fontSize: 13,
@@ -296,7 +296,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   progressLineBg: {
     height: 4,
-    background: '#18181b',
+    background: 'var(--bg-surface-elevated)',
     borderRadius: 2,
     width: '100%',
     marginBottom: 32,
@@ -343,7 +343,7 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 20,
     fontWeight: 600,
     lineHeight: 1.5,
-    color: '#ffffff',
+    color: 'var(--text-primary)',
     marginBottom: 24,
   },
   optionsList: {
@@ -357,7 +357,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '16px 20px',
     borderRadius: '12px',
     border: '1px solid var(--border-muted)',
-    background: 'rgba(255,255,255,0.01)',
+    background: 'var(--bg-surface-elevated)',
     color: 'var(--text-secondary)',
     cursor: 'pointer',
     transition: 'all 200ms ease',
@@ -397,8 +397,8 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 14,
   },
   explanationBox: {
-    background: 'rgba(255,255,255,0.01)',
-    border: '1px solid rgba(255,255,255,0.03)',
+    background: 'rgba(124, 92, 246, 0.03)',
+    border: '1px solid var(--border-muted)',
     borderRadius: '8px',
     padding: '16px',
     textAlign: 'left',

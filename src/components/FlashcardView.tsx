@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import type { Deck, Question } from '../types';
 import { ArrowLeft, Star, RotateCw, CheckCircle2, AlertTriangle, RefreshCw } from 'lucide-react';
 
@@ -17,8 +17,57 @@ export const FlashcardView: React.FC<FlashcardViewProps> = ({ deck, onSaveProgre
   const [sessionCorrect, setSessionCorrect] = useState<string[]>([]);
   const [sessionWrong, setSessionWrong] = useState<string[]>([]);
   const [isFinished, setIsFinished] = useState(false);
+  const [swipeDirection, setSwipeDirection] = useState<'left' | 'right' | null>(null);
 
   const questions = deck.questions;
+
+  // Keyboard shortcuts event listener
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (isFinished || questions.length === 0) return;
+      
+      // Avoid intercepting when user is typing inside an input/textarea
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+        return;
+      }
+
+      if (e.key === ' ') {
+        e.preventDefault();
+        handleFlip();
+      } else if (e.key === 'ArrowLeft') {
+        handleAnswer(false);
+      } else if (e.key === 'ArrowRight') {
+        handleAnswer(true);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [currentIndex, isFlipped, isFinished, questions, swipeDirection, starredIds]);
+
+  // Helper to extract clean correct option description without prefix (A., B) etc.)
+  const getCleanCorrectOptionText = () => {
+    if (!currentQuestion) return '';
+    const fullOption = currentQuestion.options.find(opt => {
+      const trimmed = opt.trim();
+      return trimmed.startsWith(currentQuestion.correctAnswer) && 
+             (trimmed.startsWith(`${currentQuestion.correctAnswer}.`) || 
+              trimmed.startsWith(`${currentQuestion.correctAnswer})`) || 
+              trimmed.startsWith(`${currentQuestion.correctAnswer}:`) || 
+              trimmed.startsWith(`${currentQuestion.correctAnswer}-`) || 
+              trimmed.startsWith(`${currentQuestion.correctAnswer} `) ||
+              trimmed === currentQuestion.correctAnswer);
+    });
+    
+    if (!fullOption) return currentQuestion.correctAnswer;
+    
+    // Strip prefixes like "A.", "A)", "A:", "A -", "A " (case insensitive)
+    const prefixRegex = new RegExp(`^${currentQuestion.correctAnswer}[.\\):\\-\\s]+`, 'i');
+    const cleaned = fullOption.replace(prefixRegex, '').trim();
+    return cleaned || fullOption;
+  };
   const currentQuestion: Question | undefined = questions[currentIndex];
 
   const handleFlip = () => {
@@ -44,7 +93,10 @@ export const FlashcardView: React.FC<FlashcardViewProps> = ({ deck, onSaveProgre
   };
 
   const handleAnswer = (known: boolean) => {
-    if (!currentQuestion) return;
+    if (!currentQuestion || swipeDirection) return;
+    
+    // Set swipe direction to trigger CSS animation
+    setSwipeDirection(known ? 'right' : 'left');
     
     const questionId = currentQuestion.id;
     let nextCorrect = [...deck.progress.correctQuestions];
@@ -71,15 +123,16 @@ export const FlashcardView: React.FC<FlashcardViewProps> = ({ deck, onSaveProgre
     // Save to parent state / localStorage
     onSaveProgress(deck.id, nextCorrect, nextWrong, starredIds);
 
-    // Advance to next question
-    setIsFlipped(false);
+    // Advance to next question after animation ends
     setTimeout(() => {
+      setIsFlipped(false);
+      setSwipeDirection(null);
       if (currentIndex < questions.length - 1) {
         setCurrentIndex(currentIndex + 1);
       } else {
         setIsFinished(true);
       }
-    }, 150); // slight delay to allow flip animation to reset
+    }, 500); // 500ms swipe animation
   };
 
   const handleRestart = (onlyWrong = false) => {
@@ -177,99 +230,117 @@ export const FlashcardView: React.FC<FlashcardViewProps> = ({ deck, onSaveProgre
         <div style={{ ...styles.progressLineFill, width: `${((currentIndex) / questions.length) * 100}%` }} />
       </div>
 
-      {/* 3D Flashcard Container */}
-      <div 
-        className={`flashcard-wrapper ${isFlipped ? 'flipped' : ''}`} 
-        onClick={handleFlip}
-        style={styles.cardContainer}
-      >
-        <div className="flashcard-inner">
-          {/* FRONT */}
-          <div className="flashcard-front">
-            <div className="double-bezel" style={{ height: '100%' }}>
-              <div className="double-bezel-inner" style={styles.cardInnerFront}>
-                <div style={styles.cardHeader}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                    <span style={styles.cardBadge}>CÂU HỎI</span>
-                    {currentQuestion.isSolvedByAi && (
-                      <span style={styles.aiBadge}>🤖 AI tự giải</span>
-                    )}
-                  </div>
-                  <button 
-                    style={{ ...styles.starBtn, color: isStarred ? '#f59e0b' : 'var(--text-muted)' }}
-                    onClick={(e) => handleStar(e, currentQuestion.id)}
-                    title={isStarred ? "Bỏ đánh dấu" : "Đánh dấu câu hỏi"}
-                  >
-                    <Star size={20} fill={isStarred ? '#f59e0b' : 'none'} />
-                  </button>
-                </div>
-                
-                <div style={styles.questionText}>
-                  {currentQuestion.question}
-                </div>
+      {/* 3D Flashcard Stack Container */}
+      <div className="stack-container">
+        {/* Next Card in Stack (Visual Only) */}
+        {currentIndex < questions.length - 1 && (
+          <div 
+            className={`flashcard-wrapper next-card ${swipeDirection ? 'scale-up' : ''}`}
+          >
+            <div className="flashcard-inner">
+              <div className="flashcard-front">
+                <div className="double-bezel" style={{ height: '100%' }}>
+                  <div className="double-bezel-inner" style={styles.cardInnerFront}>
+                    <div style={styles.cardHeader}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                        <span style={styles.cardBadge}>CÂU HỎI</span>
+                        {questions[currentIndex + 1].isSolvedByAi && (
+                          <span style={styles.aiBadge}>🤖 AI tự giải</span>
+                        )}
+                      </div>
+                    </div>
+                    
+                    <div style={styles.questionText}>
+                      {questions[currentIndex + 1].question}
+                    </div>
 
-                <div style={styles.hintText}>
-                  <RotateCw size={12} style={{ marginRight: 6 }} />
-                  Chạm vào thẻ để lật xem đáp án
+                    <div style={styles.hintText}>
+                      <RotateCw size={12} style={{ marginRight: 6 }} />
+                      Chạm vào thẻ để lật xem đáp án
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        )}
 
-          {/* BACK */}
-          <div className="flashcard-back">
-            <div className="double-bezel" style={{ height: '100%' }}>
-              <div className="double-bezel-inner" style={styles.cardInnerBack}>
-                <div style={styles.cardHeader}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                    <span style={{ ...styles.cardBadge, background: 'rgba(16, 185, 129, 0.1)', color: '#10b981' }}>ĐÁP ÁN ĐÚNG</span>
-                    {currentQuestion.isSolvedByAi && (
-                      <span style={styles.aiBadge}>🤖 AI tự giải</span>
-                    )}
+        {/* Current Active Card */}
+        <div 
+          className={`flashcard-wrapper active-card ${isFlipped ? 'flipped' : ''} ${swipeDirection ? `swipe-${swipeDirection}` : ''}`} 
+          onClick={handleFlip}
+        >
+          <div className="flashcard-inner">
+            {/* FRONT */}
+            <div className="flashcard-front">
+              <div className="double-bezel" style={{ height: '100%' }}>
+                <div className="double-bezel-inner" style={styles.cardInnerFront}>
+                  <div style={styles.cardHeader}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <span style={styles.cardBadge}>CÂU HỎI</span>
+                      {currentQuestion.isSolvedByAi && (
+                        <span style={styles.aiBadge}>🤖 AI tự giải</span>
+                      )}
+                    </div>
+                    <button 
+                      style={{ ...styles.starBtn, color: isStarred ? '#f59e0b' : 'var(--text-muted)' }}
+                      onClick={(e) => handleStar(e, currentQuestion.id)}
+                      title={isStarred ? "Bỏ đánh dấu" : "Đánh dấu câu hỏi"}
+                    >
+                      <Star size={20} fill={isStarred ? '#f59e0b' : 'none'} />
+                    </button>
                   </div>
-                  <button 
-                    style={{ ...styles.starBtn, color: isStarred ? '#f59e0b' : 'var(--text-muted)' }}
-                    onClick={(e) => handleStar(e, currentQuestion.id)}
-                  >
-                    <Star size={20} fill={isStarred ? '#f59e0b' : 'none'} />
-                  </button>
-                </div>
+                  
+                  <div style={styles.questionText}>
+                    {currentQuestion.question}
+                  </div>
 
-                <div style={styles.answerText}>
-                  Đáp án chính xác: <strong style={{ color: '#10b981', fontSize: 18 }}>{currentQuestion.correctAnswer}</strong>
+                  <div style={styles.hintText}>
+                    <RotateCw size={12} style={{ marginRight: 6 }} />
+                    Chạm vào thẻ để lật xem đáp án
+                  </div>
                 </div>
+              </div>
+            </div>
 
-                <div style={styles.optionsList}>
-                  {currentQuestion.options.map((opt, i) => {
-                    const isCorrectOption = opt.trim().startsWith(currentQuestion.correctAnswer) || 
-                                           opt.trim().startsWith(`${currentQuestion.correctAnswer}.`) ||
-                                           opt.trim().startsWith(`${currentQuestion.correctAnswer})`);
-                    return (
-                      <div 
-                        key={i} 
-                        style={{
-                          ...styles.optionRow,
-                          background: isCorrectOption ? 'rgba(16, 185, 129, 0.08)' : 'rgba(255, 255, 255, 0.01)',
-                          borderColor: isCorrectOption ? 'rgba(16, 185, 129, 0.3)' : 'var(--border-muted)',
-                        }}
-                      >
-                        {opt}
-                      </div>
-                    );
-                  })}
-                </div>
+            {/* BACK */}
+            <div className="flashcard-back">
+              <div className="double-bezel" style={{ height: '100%' }}>
+                <div className="double-bezel-inner" style={styles.cardInnerBack}>
+                  <div style={styles.cardHeader}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <span style={{ ...styles.cardBadge, background: 'rgba(16, 185, 129, 0.1)', color: '#10b981' }}>ĐÁP ÁN ĐÚNG</span>
+                      {currentQuestion.isSolvedByAi && (
+                        <span style={styles.aiBadge}>🤖 AI tự giải</span>
+                      )}
+                    </div>
+                    <button 
+                      style={{ ...styles.starBtn, color: isStarred ? '#f59e0b' : 'var(--text-muted)' }}
+                      onClick={(e) => handleStar(e, currentQuestion.id)}
+                    >
+                      <Star size={20} fill={isStarred ? '#f59e0b' : 'none'} />
+                    </button>
+                  </div>
 
-                {currentQuestion.explanation && (
-                  <div style={styles.explanationBox}>
-                    <strong style={{ color: '#a78bfa', fontSize: 12, display: 'block', marginBottom: 4 }}>GIẢI THÍCH:</strong>
-                    <div style={styles.explanationContent}>
-                      {currentQuestion.explanation}
+                  <div style={styles.answerTextContainer}>
+                    <div style={styles.answerLabel}>ĐÁP ÁN ĐÚNG</div>
+                    <div style={styles.largeAnswerText}>
+                      {getCleanCorrectOptionText()}
                     </div>
                   </div>
-                )}
 
-                <div style={styles.hintText}>
-                  Chạm để quay lại câu hỏi
+                  {currentQuestion.explanation && (
+                    <div style={styles.explanationBox}>
+                      <strong style={{ color: '#a78bfa', fontSize: 12, display: 'block', marginBottom: 4 }}>GIẢI THÍCH:</strong>
+                      <div style={styles.explanationContent}>
+                        {currentQuestion.explanation}
+                      </div>
+                    </div>
+                  )}
+
+                  <div style={styles.hintText}>
+                    Chạm để quay lại câu hỏi
+                  </div>
                 </div>
               </div>
             </div>
@@ -278,32 +349,47 @@ export const FlashcardView: React.FC<FlashcardViewProps> = ({ deck, onSaveProgre
       </div>
 
       {/* Button options */}
-      <div style={styles.controls}>
-        {!isFlipped ? (
-          <button className="btn-primary" onClick={handleFlip} style={styles.flipBtn}>
-            <RotateCw size={16} />
-            Lật xem đáp án
-          </button>
-        ) : (
+      <div style={styles.controlsContainer}>
+        <div style={styles.controls}>
           <div style={styles.flipControls}>
             <button 
               className="btn-secondary" 
-              style={{ ...styles.choiceBtn, borderColor: 'rgba(239, 68, 68, 0.3)', background: 'rgba(239, 68, 68, 0.05)' }}
+              style={{ 
+                ...styles.choiceBtn, 
+                borderColor: 'var(--error)', 
+                background: 'rgba(239, 68, 68, 0.05)', 
+                color: 'var(--error)' 
+              }}
               onClick={() => handleAnswer(false)}
+              disabled={!!swipeDirection}
             >
-              <AlertTriangle size={16} color="#ef4444" />
-              <span style={{ color: '#fca5a5' }}>Chưa thuộc</span>
+              <AlertTriangle size={16} color="var(--error)" />
+              <span>Không biết</span>
             </button>
             <button 
               className="btn-primary" 
-              style={{ ...styles.choiceBtn, background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)', boxShadow: '0 4px 12px rgba(16, 185, 129, 0.3)' }}
+              style={{ 
+                ...styles.choiceBtn, 
+                background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)', 
+                boxShadow: '0 4px 12px rgba(16, 185, 129, 0.2)',
+                borderColor: 'transparent',
+                color: '#ffffff'
+              }}
               onClick={() => handleAnswer(true)}
+              disabled={!!swipeDirection}
             >
-              <CheckCircle2 size={16} />
-              <span>Đã thuộc</span>
+              <CheckCircle2 size={16} color="#ffffff" />
+              <span>Đã biết</span>
             </button>
           </div>
-        )}
+        </div>
+
+        {/* Keyboard shortcut hints on Desktop */}
+        <div className="desktop-only-hints" style={styles.keyboardHints}>
+          <span style={styles.keyHint}><kbd style={styles.kbd}>Space</kbd> Thẻ lật</span>
+          <span style={styles.keyHint}><kbd style={styles.kbd}>←</kbd> Không biết</span>
+          <span style={styles.keyHint}><kbd style={styles.kbd}>→</kbd> Biết</span>
+        </div>
       </div>
     </div>
   );
@@ -337,7 +423,7 @@ const styles: Record<string, React.CSSProperties> = {
   deckNameTitle: {
     fontSize: 14,
     fontWeight: 700,
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   counterText: {
     fontSize: 13,
@@ -346,7 +432,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   progressLineBg: {
     height: 4,
-    background: '#18181b',
+    background: 'var(--bg-surface-elevated)',
     borderRadius: 2,
     width: '100%',
     marginBottom: 32,
@@ -417,7 +503,7 @@ const styles: Record<string, React.CSSProperties> = {
     lineHeight: 1.5,
     textAlign: 'center',
     margin: 'auto 0',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   answerText: {
     fontSize: 16,
@@ -439,8 +525,8 @@ const styles: Record<string, React.CSSProperties> = {
     lineHeight: 1.4,
   },
   explanationBox: {
-    background: 'rgba(255,255,255,0.01)',
-    border: '1px solid rgba(255,255,255,0.03)',
+    background: 'rgba(124, 92, 246, 0.03)',
+    border: '1px solid var(--border-muted)',
     borderRadius: '8px',
     padding: '12px',
     marginBottom: 16,
@@ -460,9 +546,17 @@ const styles: Record<string, React.CSSProperties> = {
     marginTop: 'auto',
     textAlign: 'center',
   },
+  controlsContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: 16,
+    width: '100%',
+  },
   controls: {
     display: 'flex',
     justifyContent: 'center',
+    width: '100%',
   },
   flipBtn: {
     width: '100%',
@@ -481,6 +575,53 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '14px 28px',
     justifyContent: 'center',
     fontSize: 14,
+  },
+  keyboardHints: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: 24,
+    color: 'var(--text-muted)',
+    fontSize: 12,
+    fontWeight: 600,
+  },
+  kbd: {
+    background: 'var(--bg-surface-elevated)',
+    border: '1px solid var(--border-muted)',
+    borderRadius: '6px',
+    padding: '3px 8px',
+    marginRight: 6,
+    fontSize: 10,
+    fontWeight: 800,
+    fontFamily: 'inherit',
+    color: 'var(--text-secondary)',
+    boxShadow: '0 2px 0 var(--border-muted)',
+  },
+  keyHint: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  answerTextContainer: {
+    margin: 'auto 0',
+    textAlign: 'center',
+    padding: '24px 12px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    flex: 1,
+  },
+  answerLabel: {
+    fontSize: 11,
+    fontWeight: 800,
+    color: 'var(--text-muted)',
+    letterSpacing: '0.15em',
+    marginBottom: 16,
+    textTransform: 'uppercase',
+  },
+  largeAnswerText: {
+    fontSize: 22,
+    fontWeight: 700,
+    color: 'var(--success)',
+    lineHeight: 1.6,
   },
   finishedCard: {
     maxWidth: '540px',
@@ -510,8 +651,8 @@ const styles: Record<string, React.CSSProperties> = {
     gridTemplateColumns: 'repeat(3, 1fr)',
     gap: 16,
     width: '100%',
-    background: 'rgba(255,255,255,0.01)',
-    border: '1px solid rgba(255,255,255,0.03)',
+    background: 'rgba(124, 92, 246, 0.03)',
+    border: '1px solid var(--border-muted)',
     padding: '16px 8px',
     borderRadius: '16px',
     margin: '12px 0',
@@ -524,7 +665,7 @@ const styles: Record<string, React.CSSProperties> = {
   finishedStatValue: {
     fontSize: 22,
     fontWeight: 800,
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   finishedStatLabel: {
     fontSize: 11,

@@ -255,7 +255,7 @@ const styles: Record<string, React.CSSProperties> = {
   deckTitle: {
     fontSize: 18,
     fontWeight: 700,
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   deleteBtn: {
     background: 'none',
@@ -283,12 +283,12 @@ const styles: Record<string, React.CSSProperties> = {
     color: 'var(--text-secondary)',
   },
   progressPercentage: {
-    color: '#ffffff',
+    color: 'var(--text-primary)',
     fontWeight: 600,
   },
   progressBarBg: {
     height: 6,
-    background: '#18181b',
+    background: 'var(--bg-surface-elevated)',
     borderRadius: 3,
     overflow: 'hidden',
   },
@@ -301,8 +301,8 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gap: 12,
-    background: 'rgba(255,255,255,0.01)',
-    border: '1px solid rgba(255,255,255,0.03)',
+    background: 'rgba(124, 92, 246, 0.03)',
+    border: '1px solid var(--border-muted)',
     padding: '12px 6px',
     borderRadius: '12px',
     textAlign: 'center',
@@ -315,7 +315,7 @@ const styles: Record<string, React.CSSProperties> = {
   statValue: {
     fontSize: 16,
     fontWeight: 700,
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   statLabel: {
     fontSize: 11,

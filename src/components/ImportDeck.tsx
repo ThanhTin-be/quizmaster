@@ -95,7 +95,7 @@ export const ImportDeck: React.FC<ImportDeckProps> = ({ decks, onImport, onCance
             </div>
             
             <p style={styles.stepDesc}>
-              Copy câu lệnh (Prompt) bên dưới, dán kèm tài liệu PDF hoặc văn bản bài học của bạn vào ChatGPT, Claude hoặc Gemini để nhận về file dữ liệu chuẩn JSON.
+              Copy câu lệnh (Prompt) bên dưới, dán kèm tài liệu PDF hoặc văn bản bài học của bạn vào ChatGPT, Claude hoặc Gemini. AI sẽ tạo file tải xuống hoặc in kết quả trực tiếp trong chat.
             </p>
 
             <div style={styles.promptBox}>
@@ -145,7 +145,7 @@ export const ImportDeck: React.FC<ImportDeckProps> = ({ decks, onImport, onCance
                       ...styles.modeTab,
                       background: importMode === 'new' ? 'rgba(139, 92, 246, 0.15)' : 'transparent',
                       borderColor: importMode === 'new' ? 'rgba(139, 92, 246, 0.3)' : 'var(--border-muted)',
-                      color: importMode === 'new' ? '#ffffff' : 'var(--text-muted)'
+                      color: importMode === 'new' ? 'var(--text-primary)' : 'var(--text-muted)'
                     }}
                     onClick={() => setImportMode('new')}
                   >
@@ -158,7 +158,7 @@ export const ImportDeck: React.FC<ImportDeckProps> = ({ decks, onImport, onCance
                       ...styles.modeTab,
                       background: importMode === 'append' ? 'rgba(139, 92, 246, 0.15)' : 'transparent',
                       borderColor: importMode === 'append' ? 'rgba(139, 92, 246, 0.3)' : 'var(--border-muted)',
-                      color: importMode === 'append' ? '#ffffff' : 'var(--text-muted)',
+                      color: importMode === 'append' ? 'var(--text-primary)' : 'var(--text-muted)',
                       opacity: decks.length === 0 ? 0.4 : 1,
                       cursor: decks.length === 0 ? 'not-allowed' : 'pointer'
                     }}
@@ -221,7 +221,7 @@ export const ImportDeck: React.FC<ImportDeckProps> = ({ decks, onImport, onCance
                 </div>
                 <textarea 
                   id="jsonInput"
-                  placeholder='Dán dữ liệu JSON hoặc định dạng văn bản rút gọn (Q:, A:, B:, C:, D:, K:, E:, S:) hoặc tải file vào đây...' 
+                  placeholder='Dán dữ liệu từ AI vào đây (format: Q:, A:, B:, C:, D:, ANS:, EXP:) hoặc tải file .txt/.json...' 
                   value={jsonText}
                   onChange={(e) => setJsonText(e.target.value)}
                   style={styles.jsonTextarea}
@@ -310,8 +310,8 @@ const styles: Record<string, React.CSSProperties> = {
     lineHeight: 1.5,
   },
   promptBox: {
-    background: '#070709',
-    border: '1px solid rgba(255, 255, 255, 0.05)',
+    background: 'var(--bg-surface-elevated)',
+    border: '1px solid var(--border-muted)',
     borderRadius: '12px',
     display: 'flex',
     flexDirection: 'column',
@@ -320,11 +320,11 @@ const styles: Record<string, React.CSSProperties> = {
   },
   promptBoxHeader: {
     padding: '8px 12px',
-    borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
+    borderBottom: '1px solid var(--border-muted)',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    background: 'rgba(255,255,255,0.01)',
+    background: 'var(--theme-toggle-bg)',
   },
   copyBtn: {
     background: 'none',
@@ -342,7 +342,7 @@ const styles: Record<string, React.CSSProperties> = {
     background: 'none',
     border: 'none',
     outline: 'none',
-    color: '#94a3b8',
+    color: 'var(--text-secondary)',
     fontFamily: 'ui-monospace, monospace',
     fontSize: 12,
     lineHeight: 1.5,
@@ -395,11 +395,11 @@ const styles: Record<string, React.CSSProperties> = {
     outline: 'none',
   },
   select: {
-    background: '#070709',
+    background: 'var(--bg-surface-elevated)',
     border: '1px solid var(--border-muted)',
     borderRadius: '8px',
     padding: '12px',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
     fontSize: 14,
     outline: 'none',
     width: '100%',
@@ -407,25 +407,25 @@ const styles: Record<string, React.CSSProperties> = {
     transition: 'var(--transition-fluid)',
   },
   option: {
-    background: '#070709',
-    color: '#ffffff',
+    background: 'var(--bg-surface)',
+    color: 'var(--text-primary)',
   },
   input: {
-    background: '#070709',
+    background: 'var(--bg-surface-elevated)',
     border: '1px solid var(--border-muted)',
     borderRadius: '8px',
     padding: '12px',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
     fontSize: 14,
     outline: 'none',
     transition: 'var(--transition-fluid)',
   },
   jsonTextarea: {
-    background: '#070709',
+    background: 'var(--bg-surface-elevated)',
     border: '1px solid var(--border-muted)',
     borderRadius: '8px',
     padding: '12px',
-    color: '#a7f3d0', // nice green text for code feel
+    color: 'var(--text-primary)',
     fontFamily: 'ui-monospace, monospace',
     fontSize: 12,
     lineHeight: 1.5,
