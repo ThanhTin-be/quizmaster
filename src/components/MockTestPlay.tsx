@@ -112,7 +112,7 @@ export const MockTestPlay: React.FC<MockTestPlayProps> = ({
 
   const handleAutoSubmit = () => {
     alert('Hết giờ làm bài! Hệ thống tự động nộp bài thi.');
-    submitTest(userAnswers, true);
+    submitTest(userAnswers);
   };
 
   // Answer selection
