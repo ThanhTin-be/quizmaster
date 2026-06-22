@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import type { Deck, Question, MockTestConfig, MockTestHistoryItem } from '../types';
-import { ArrowLeft, Clock, CheckCircle2, XCircle, Award, ChevronLeft, ChevronRight, RefreshCw } from 'lucide-react';
+import { ArrowLeft, Clock, CheckCircle2, XCircle, Award, ChevronLeft, ChevronRight, RefreshCw, Shuffle } from 'lucide-react';
+import { buildShuffleMap } from '../utils/shuffleOptions';
+import type { ShuffledQuestion } from '../utils/shuffleOptions';
 
 interface MockTestPlayProps {
   config?: MockTestConfig;
@@ -19,6 +21,7 @@ export const MockTestPlay: React.FC<MockTestPlayProps> = ({
 }) => {
   // Question pool and loading
   const [questions, setQuestions] = useState<Question[]>([]);
+  const [shuffleMaps, setShuffleMaps] = useState<ShuffledQuestion[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -77,7 +80,10 @@ export const MockTestPlay: React.FC<MockTestPlayProps> = ({
     }
 
     // Shuffle the combined set so they are mixed together in the exam
-    setQuestions(shuffleArray(selectedQ));
+    const finalQuestions = shuffleArray(selectedQ);
+    setQuestions(finalQuestions);
+    // Tính trước shuffle đáp án cho tất cả câu hỏi (1 lần duy nhất)
+    setShuffleMaps(buildShuffleMap(finalQuestions));
     startTimeRef.current = Date.now();
   }, [config, decks, reviewItem]);
 
@@ -116,14 +122,20 @@ export const MockTestPlay: React.FC<MockTestPlayProps> = ({
   };
 
   // Answer selection
-  const handleSelectOption = (optionLabel: string) => {
+  const handleSelectOption = (displayLabel: string) => {
     if (isSubmitted) return;
     const currentQ = questions[currentIndex];
     if (!currentQ) return;
 
+    // Map display label → original label để lưu kết quả chính xác
+    const currentShuffle = shuffleMaps[currentIndex];
+    const originalLabel = currentShuffle
+      ? (currentShuffle.displayToOriginalLabel[displayLabel] ?? displayLabel)
+      : displayLabel;
+
     setUserAnswers(prev => ({
       ...prev,
-      [currentQ.id]: optionLabel
+      [currentQ.id]: originalLabel
     }));
   };
 
@@ -411,12 +423,15 @@ export const MockTestPlay: React.FC<MockTestPlayProps> = ({
           <div className="double-bezel-inner" style={styles.cardInner}>
             <div style={styles.cardHeader}>
               <div style={styles.scoreBadge}>CÂU HỎI {currentIndex + 1} / {questions.length}</div>
-              <div style={styles.statusLabel}>
-                {selectedOption ? (
-                  <span style={{ color: '#a78bfa', fontWeight: 600 }}>✓ Đã chọn đáp án</span>
-                ) : (
-                  <span style={{ color: 'var(--text-muted)' }}>⚠ Chưa trả lời</span>
-                )}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <div style={styles.shuffleBadge}><Shuffle size={10} style={{ marginRight: 4 }} />Đáp án ngẫu nhiên</div>
+                <div style={styles.statusLabel}>
+                  {selectedOption ? (
+                    <span style={{ color: '#a78bfa', fontWeight: 600 }}>✓ Đã chọn đáp án</span>
+                  ) : (
+                    <span style={{ color: 'var(--text-muted)' }}>⚠ Chưa trả lời</span>
+                  )}
+                </div>
               </div>
             </div>
 
@@ -425,11 +440,17 @@ export const MockTestPlay: React.FC<MockTestPlayProps> = ({
               {currentQuestion.question}
             </div>
 
-            {/* Options List */}
+            {/* Options List - dùng shuffledOptions nếu có */}
             <div style={styles.optionsList}>
-              {currentQuestion.options.map((opt, i) => {
+              {(shuffleMaps[currentIndex]?.shuffledOptions ?? currentQuestion.options).map((opt, i) => {
                 const optLabel = opt.trim().charAt(0);
-                const isSelected = selectedOption === optLabel;
+                // Kiểm tra user đã chọn option nào (theo label gốc) rồi map ngược lại
+                const currentShuffle = shuffleMaps[currentIndex];
+                const selectedOriginal = userAnswers[currentQuestion.id] || null;
+                const displayLabelOfSelected = currentShuffle && selectedOriginal
+                  ? (currentShuffle.originalToDisplayLabel[selectedOriginal] ?? selectedOriginal)
+                  : selectedOriginal;
+                const isSelected = displayLabelOfSelected === optLabel;
                 
                 return (
                   <button
@@ -658,6 +679,17 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '4px 10px',
     borderRadius: '6px',
     letterSpacing: '0.05em',
+  },
+  shuffleBadge: {
+    fontSize: 10,
+    fontWeight: 700,
+    background: 'rgba(99, 102, 241, 0.08)',
+    color: '#818cf8',
+    border: '1px solid rgba(99, 102, 241, 0.2)',
+    padding: '3px 8px',
+    borderRadius: '6px',
+    display: 'flex',
+    alignItems: 'center',
   },
   statusLabel: {
     fontSize: 12,

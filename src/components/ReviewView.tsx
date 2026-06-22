@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import type { Deck, Question } from '../types';
-import { ArrowLeft, CheckCircle2, XCircle, RefreshCw, Sparkles, Smile } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, XCircle, RefreshCw, Sparkles, Smile, Shuffle } from 'lucide-react';
+import { buildShuffleMap } from '../utils/shuffleOptions';
 
 interface ReviewViewProps {
   deck: Deck;
@@ -20,6 +21,13 @@ export const ReviewView: React.FC<ReviewViewProps> = ({ deck, onSaveProgress, on
   const [sessionCorrectCount, setSessionCorrectCount] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 
+  // Shuffle key: tăng lên mỗi lần restart để tạo shuffle mới
+  const [shuffleKey, setShuffleKey] = useState(0);
+
+  // Tính trước shuffle cho toàn bộ câu hỏi sai (1 lần mỗi session)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const shuffleMaps = useMemo(() => buildShuffleMap(wrongQuestions), [wrongQuestions, shuffleKey]);
+
   const currentQuestion: Question | undefined = wrongQuestions[currentIndex];
 
   const handleOptionClick = (optionLabel: string) => {
@@ -29,7 +37,9 @@ export const ReviewView: React.FC<ReviewViewProps> = ({ deck, onSaveProgress, on
     setIsAnswered(true);
 
     const questionId = currentQuestion.id;
-    const isCorrect = optionLabel === currentQuestion.correctAnswer;
+    // So sánh với correctDisplayLabel sau khi shuffle
+    const currentShuffle = shuffleMaps[currentIndex];
+    const isCorrect = optionLabel === currentShuffle.correctDisplayLabel;
 
     let nextCorrect = [...deck.progress.correctQuestions];
     let nextWrong = [...deck.progress.wrongQuestions];
@@ -77,6 +87,8 @@ export const ReviewView: React.FC<ReviewViewProps> = ({ deck, onSaveProgress, on
     setIsAnswered(false);
     setIsFinished(false);
     setSessionCorrectCount(0);
+    // Tăng shuffleKey để tạo shuffle mới cho session mới
+    setShuffleKey(prev => prev + 1);
   };
 
   // If there are no wrong questions left
@@ -134,6 +146,7 @@ export const ReviewView: React.FC<ReviewViewProps> = ({ deck, onSaveProgress, on
           <div style={styles.cardHeader}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <div style={styles.errorBadge}>CHẾ ĐỘ SỬA SAI: CÒN {wrongQuestions.length - currentIndex} CÂU</div>
+              <div style={styles.shuffleBadge}><Shuffle size={10} style={{ marginRight: 4 }} />Đáp án ngẫu nhiên</div>
               {currentQuestion.isSolvedByAi && (
                 <div style={styles.aiBadge}>🤖 AI tự giải</div>
               )}
@@ -145,14 +158,15 @@ export const ReviewView: React.FC<ReviewViewProps> = ({ deck, onSaveProgress, on
             {currentQuestion.question}
           </div>
 
-          {/* Options List */}
+          {/* Options List - dùng shuffledOptions */}
           <div style={styles.optionsList}>
-            {currentQuestion.options.map((option, i) => {
+            {shuffleMaps[currentIndex]?.shuffledOptions.map((option, i) => {
               const cleanOption = option.trim();
               const optionLabel = cleanOption.charAt(0);
+              const currentShuffle = shuffleMaps[currentIndex];
 
               const isSelected = selectedOption === optionLabel;
-              const isCorrectAnswer = optionLabel === currentQuestion.correctAnswer;
+              const isCorrectAnswer = optionLabel === currentShuffle.correctDisplayLabel;
               
               let btnStyle = { ...styles.optionButton };
               
@@ -225,7 +239,7 @@ export const ReviewView: React.FC<ReviewViewProps> = ({ deck, onSaveProgress, on
                   borderColor: selectedOption === currentQuestion.correctAnswer ? 'rgba(16, 185, 129, 0.1)' : 'rgba(239, 68, 68, 0.1)',
                 }}
               >
-                {selectedOption === currentQuestion.correctAnswer ? (
+                {selectedOption === shuffleMaps[currentIndex]?.correctDisplayLabel ? (
                   <>
                     <Smile size={16} color="#10b981" />
                     <strong>Tuyệt vời! Bạn đã sửa được câu hỏi này. (Sẽ loại khỏi mục làm sai)</strong>
@@ -329,6 +343,17 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '4px 10px',
     borderRadius: '6px',
     letterSpacing: '0.05em',
+  },
+  shuffleBadge: {
+    fontSize: 10,
+    fontWeight: 700,
+    background: 'rgba(99, 102, 241, 0.08)',
+    color: '#818cf8',
+    border: '1px solid rgba(99, 102, 241, 0.2)',
+    padding: '3px 8px',
+    borderRadius: '6px',
+    display: 'flex',
+    alignItems: 'center',
   },
   aiBadge: {
     fontSize: 9,

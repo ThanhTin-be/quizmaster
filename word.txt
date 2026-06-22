@@ -1,0 +1,1279 @@
+Q: Với MS-Word, có thể nhấn phím nào để hiện các Key Tips cho phép truy cập lệnh từ bàn phím?
+A: Ctrl
+B: Alt
+C: Shift
+D: Esc
+ANS: B
+EXP: Nhấn phím Alt sẽ hiển thị Key Tips trên Ribbon, cho phép truy cập lệnh bằng bàn phím.
+
+Q: Với MS-Word, có bao nhiêu kiểu hiển thị tài liệu?
+A: 1
+B: 2
+C: 3
+D: Trên 3
+ANS: D
+EXP: MS-Word có nhiều hơn 3 kiểu hiển thị tài liệu (Print Layout, Read Mode, Web Layout, Outline, Draft...).
+
+Q: Với MS-Word, muốn thay đổi tỉ lệ zoom tài liệu bằng bánh xe chuột thì kết hợp với đè giữ phím nào?
+A: Ctrl
+B: Alt
+C: Shift
+D: Esc
+ANS: A
+EXP: Lăn bánh xe chuột kết hợp giữ phím Ctrl để thay đổi tỉ lệ zoom tài liệu.
+
+Q: Với MS-Word, muốn cho ẩn/hiện Ribbon thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+F1
+B: Shift+F1
+C: Alt+F1
+D: Ctrl+Shift+F1
+ANS: A
+EXP: Tổ hợp phím Ctrl+F1 dùng để ẩn/hiện Ribbon trong MS-Word.
+
+Q: Phát biểu nào sau đây là sai về thanh trạng thái (Status bar) trong MS-Word?
+A: Mặc định được bố trí ở cuối cửa sổ
+B: Cung cấp các thông tin hữu ích về tài liệu
+C: Có thể tùy chọn thông tin cần hiển thị từ danh sách liệt kê sẵn
+D: Với mọi phiên bản MS-Word đều có thể tùy chọn cho ẩn/hiện Status bar
+ANS: D
+EXP: Không phải mọi phiên bản MS-Word đều hỗ trợ tùy chọn ẩn/hiện Status bar.
+
+Q: Có thể tùy chọn cho hiện/ẩn thước (Rulers) trong cửa sổ Word khi truy cập tab nào?
+A: Home
+B: Insert
+C: Review
+D: View
+ANS: D
+EXP: Tab View chứa tùy chọn hiện/ẩn thước (Rulers).
+
+Q: Trong hộp thoại Word Options, không thể tùy chọn cho/không cho hiện mục nào?
+A: Horizontal ruler
+B: Vertical ruler
+C: Horizontal scroll bar
+D: Vertical scroll bar
+ANS: A
+EXP: Horizontal ruler không thể tùy chọn ẩn/hiện từ Word Options (chỉ có thể từ tab View).
+
+Q: Trong hộp thoại Word Options, không thể tùy chọn cho/không cho hiện mục nào?
+A: Screen Tips
+B: Phím tắt (nếu có) trong các Screen Tips
+C: Các ký tự ẩn (Tab character, Space, Paragraph mark…)
+D: Navigation Pane
+ANS: D
+EXP: Navigation Pane không thể bật/tắt từ Word Options mà phải từ tab View.
+
+Q: Trong hộp thoại Word Options, không thể thực hiện điều nào?
+A: Tùy chọn đơn vị đo (Measurement units)
+B: Khai báo ngôn ngữ mặc định
+C: Bật/tắt chức năng tự động kiểm tra chính tả
+D: Định nghĩa AutoText
+ANS: D
+EXP: AutoText không được định nghĩa từ Word Options mà thực hiện trực tiếp trong tài liệu.
+
+Q: Với MS-Word, muốn bổ sung nút chức năng vào Quick Access Toolbar ngoài từ Word Options còn có thể làm thế nào?
+A: Thiết lập từ tab Insert
+B: Thiết lập từ tab Review
+C: Thiết lập từ tab View
+D: Right-click vào nút này trên Ribbon rồi chọn lệnh Add to Quick Access Toolbar
+ANS: D
+EXP: Có thể right-click vào nút lệnh trên Ribbon và chọn "Add to Quick Access Toolbar".
+
+Q: Với MS-Word, muốn sắp xếp lại vị trí các nút trong Quick Access Toolbar thì có thể làm thế nào?
+A: Đè giữ Ctrl + Drag nút này thả sang vị trí đích
+B: Đè giữ Alt + Drag nút này thả sang vị trí đích
+C: Đè giữ Shift + Drag nút này thả sang vị trí đích
+D: Thực hiện trong hộp thoại Word Options
+ANS: D
+EXP: Sắp xếp lại vị trí nút trong Quick Access Toolbar phải thực hiện qua hộp thoại Word Options.
+
+Q: Trong hộp thoại Word Options, không thể tùy chọn điều nào khi save?
+A: Folder mặc định khi save lần đầu
+B: Dạng thức [format] file mặc định khi save
+C: Tên file [file name] mặc định khi save lần đầu
+D: Nhúng font [Embed fonts] kèm theo tài liệu khi save
+ANS: C
+EXP: Word Options không cho phép đặt tên file mặc định khi save lần đầu.
+
+Q: Khi bật "Save AutoRecover information…" trong Word Options, sau mỗi khoảng thời gian xác lập, chương trình sẽ làm gì?
+A: Save lại file hiện hành
+B: Sao lưu thông tin của tài liệu vào 1 file dự phòng
+C: Hiện thông báo nhắc save tài liệu
+D: Phục hồi lại trạng thái của lần save trước đó cho tài liệu
+ANS: B
+EXP: AutoRecover sao lưu thông tin vào file dự phòng để khôi phục khi cần, không phải save trực tiếp file gốc.
+
+Q: Với MS-Word, muốn tạo tài liệu mới thì có thể sử dụng tổ hợp phím nào?
+A: Alt+N
+B: Ctrl+N
+C: Shift+N
+D: Ctrl+Shift+N
+ANS: B
+EXP: Ctrl+N là phím tắt tạo tài liệu mới trong MS-Word.
+
+Q: Với MS-Word, lệnh File > Open có khả năng như thế nào?
+A: Không mở được file có dạng thức .docx
+B: Chỉ mở được file có dạng thức .docx
+C: Mở được file có dạng thức .docx và những dạng thức tương thích khác
+D: Mở được tất cả dạng thức file
+ANS: C
+EXP: File > Open mở được .docx và các định dạng tương thích (doc, rtf, txt...) nhưng không phải tất cả mọi định dạng.
+
+Q: Nhóm nào dưới đây có dạng thức file mà MS-Word chưa save được?
+A: doc, docx, docm
+B: dot, dotx, dotm
+C: rtf, htm, mht
+D: txt, pdf, xls
+ANS: D
+EXP: MS-Word không thể save ra định dạng .xls (Excel). txt và pdf có thể save được, nhưng xls thì không.
+
+Q: Dạng thức nào dưới đây khi save, MS-Word sẽ tạo kèm 1 folder dữ liệu?
+A: dot
+B: htm
+C: mht
+D: pdf
+ANS: B
+EXP: Khi save dạng .htm, MS-Word tạo thêm một folder chứa các file tài nguyên đi kèm.
+
+Q: Khi save tài liệu MS-Word theo dạng pdf, tùy chọn nào chưa có trong Options của hộp thoại Save As?
+A: Nội dung được chọn
+B: Trang tài liệu hiện hành
+C: Section hiện hành
+D: Một số trang tùy chọn
+ANS: C
+EXP: Khi save PDF, không có tùy chọn lưu riêng "Section hiện hành".
+
+Q: MS-Word có thể save thành 1 file .docx cho phạm vi nào?
+A: Nội dung được chọn
+B: Trang tài liệu hiện hành
+C: Một số trang tài liệu tùy chọn
+D: Toàn bộ tài liệu
+ANS: D
+EXP: Khi save .docx, MS-Word chỉ có thể save toàn bộ tài liệu, không thể chọn phạm vi trang.
+
+Q: Khi save tài liệu MS-Word theo dạng .docx, danh sách Tools trong hộp thoại Save As liệt kê bao nhiêu mục chọn?
+A: 2
+B: 3
+C: 4
+D: Trên 4
+ANS: D
+EXP: Danh sách Tools trong Save As có nhiều hơn 4 mục chọn.
+
+Q: Với MS-Word, muốn sử dụng chức năng in tài liệu thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+I
+B: Ctrl+P
+C: Alt+I
+D: Alt+P
+ANS: B
+EXP: Ctrl+P là phím tắt mở hộp thoại in trong MS-Word.
+
+Q: Khi sử dụng chức năng in tài liệu, MS-Word không có tùy chọn chỉ in phạm vi nào?
+A: Phạm vi được chọn
+B: Trang hiện hành
+C: Section hiện hành
+D: 1 số trang được khai báo
+ANS: C
+EXP: MS-Word không có tùy chọn in riêng "Section hiện hành" trong hộp thoại in.
+
+Q: Muốn in từ trang 10 đến trang 20 và trang số 25, cần khai báo mục Pages là?
+A: 10.20.25
+B: 10:20,25
+C: 10-20:25
+D: 10-20,25
+ANS: D
+EXP: Dùng dấu gạch ngang (-) cho khoảng trang liên tiếp và dấu phẩy (,) để thêm trang lẻ: 10-20,25.
+
+Q: Với MS-Word, muốn đóng tài liệu thì không thể sử dụng tổ hợp phím nào?
+A: Ctrl+W
+B: Ctrl+F4
+C: Alt+W
+D: Alt+F4
+ANS: C
+EXP: Alt+W không phải phím tắt đóng tài liệu. Ctrl+W, Ctrl+F4 đóng tài liệu; Alt+F4 đóng ứng dụng.
+
+Q: Văn bản trong MS-Word không thể được tạo bằng cách nào?
+A: Nhập trực tiếp từ bàn phím
+B: Copy và Paste
+C: Chèn vào từ file văn bản tương thích
+D: Chèn bằng nút Screenshot / Trực tiếp scan từ 1 trang in
+ANS: D
+EXP: MS-Word không thể trực tiếp scan trang in để tạo văn bản chỉnh sửa được.
+
+Q: Với MS-Word, muốn xóa ký tự liền kề phía trước điểm chèn thì sử dụng phím nào?
+A: Delete
+B: Backspace
+C: Space bar
+D: Ctrl+X
+ANS: B
+EXP: Phím Backspace xóa ký tự ngay phía trước (bên trái) điểm chèn.
+
+Q: Với MS-Word, muốn xóa ký tự liền kề phía sau điểm chèn thì sử dụng phím nào?
+A: Delete
+B: Backspace
+C: Space bar
+D: Ctrl+X
+ANS: A
+EXP: Phím Delete xóa ký tự ngay phía sau (bên phải) điểm chèn.
+
+Q: Khi soạn thảo với MS-Word, muốn chuyển sang đoạn mới thì sử dụng phím nào?
+A: Enter
+B: Shift+Enter
+C: Ctrl+Enter
+D: Alt+Enter
+ANS: A
+EXP: Nhấn Enter tạo đoạn văn mới (Paragraph mark).
+
+Q: Khi soạn thảo với MS-Word, trường hợp nào sau đây sẽ không chuyển sang đoạn mới?
+A: Nhấn Enter
+B: Nhấn Shift+Enter
+C: Nhấn Ctrl+Enter
+D: Nhấn Shift+Ctrl+Enter
+ANS: B
+EXP: Shift+Enter xuống dòng (Line Break) nhưng không tạo đoạn mới.
+
+Q: Với MS-Word, muốn xuống dòng nhưng không chuyển sang đoạn mới thì sử dụng tổ hợp phím nào?
+A: Alt+Enter
+B: Ctrl+Enter
+C: Shift+Enter
+D: Ctrl+Shift+Enter
+ANS: C
+EXP: Shift+Enter tạo Line Break – xuống dòng mà không tạo đoạn mới.
+
+Q: Với MS-Word, muốn chuyển sang trang mới khi văn bản chưa đầy trang thì sử dụng tổ hợp phím nào?
+A: Alt+Enter
+B: Ctrl+Enter
+C: Shift+Enter
+D: Ctrl+Shift+Enter
+ANS: B
+EXP: Ctrl+Enter chèn Page Break, chuyển sang trang mới.
+
+Q: Tình huống nào sau đây luôn tránh được dấu "(" nằm cuối dòng hoặc ")" nằm đầu dòng?
+A: (nội dung trong cặp ngoặc)
+B: ( nội dung trong cặp ngoặc)
+C: (nội dung trong cặp ngoặc )
+D: ( nội dung trong cặp ngoặc )
+ANS: A
+EXP: Khi không có khoảng trắng sau "(" và trước ")", Word sẽ giữ cặp ngoặc gắn với nội dung bên trong, tránh bị tách dòng.
+
+Q: Khi viết liền nhau các ký tự "MicroSoft PowerPoint" thì MS-Word sẽ thống kê có mấy từ?
+A: 1
+B: 2
+C: 4
+D: 19
+ANS: B
+EXP: MS-Word đếm từ dựa vào khoảng trắng: "MicroSoft" và "PowerPoint" là 2 từ.
+
+Q: Khi viết "MicroSoft-PowerPoint" thì MS-Word sẽ thống kê có mấy từ?
+A: 1
+B: 2
+C: 4
+D: Tùy tình huống đã định nghĩa
+ANS: A
+EXP: Dấu gạch nối (-) nối hai từ thành một, nên MS-Word tính là 1 từ.
+
+Q: Với MS-Word, muốn thay thế từ viết tắt bằng từ/cụm từ đầy đủ ngoài AutoCorrect còn có thể dùng chức năng nào?
+A: Macro
+B: AutoRun
+C: AutoText
+D: AutoShape
+ANS: C
+EXP: AutoText cho phép lưu và tự động chèn cụm từ đầy đủ khi gõ từ viết tắt.
+
+Q: Với MS-Word, muốn định nghĩa 1 nội dung AutoText thì có thể sử dụng phím nào?
+A: Alt+F2
+B: Alt+F3
+C: Alt+F4
+D: Alt+F5
+ANS: B
+EXP: Alt+F3 mở hộp thoại để tạo (định nghĩa) mục AutoText mới.
+
+Q: Với MS-Word, muốn áp dụng AutoText thì nhấn phím nào?
+A: F2
+B: F3
+C: F4
+D: F5
+ANS: B
+EXP: Sau khi gõ tên AutoText, nhấn F3 để chèn nội dung AutoText vào tài liệu.
+
+Q: MS-Word không thể làm điều nào sau đây?
+A: Chuyển text thành hình ảnh
+B: Chuyển hình ảnh thành text
+C: Chuyển text thành table
+D: Chuyển table thành text
+ANS: B
+EXP: MS-Word không có chức năng nhận dạng (OCR) để chuyển hình ảnh thành text có thể chỉnh sửa.
+
+Q: Với MS-Word, khi nhấn phím Page Up/Page Down thì điểm chèn di chuyển lên/xuống bao nhiêu?
+A: 1 trang tài liệu
+B: 1 trang màn hình
+C: 1 đoạn
+D: 1 section
+ANS: B
+EXP: Page Up/Down di chuyển điểm chèn lên hoặc xuống 1 trang màn hình (không phải 1 trang tài liệu).
+
+Q: Muốn chuyển nhanh điểm chèn về đầu/cuối tài liệu MS-Word thì nhấn phím nào?
+A: Home / End
+B: Alt+Home / Alt+End
+C: Shift+Home / Shift+End
+D: Ctrl+Home / Ctrl+End
+ANS: D
+EXP: Ctrl+Home đưa điểm chèn về đầu tài liệu, Ctrl+End đưa về cuối tài liệu.
+
+Q: Với MS-Word, muốn khai báo trang tài liệu để chuyển đến thì có thể sử dụng phím nào?
+A: F4
+B: F5
+C: F6
+D: F7
+ANS: B
+EXP: F5 mở hộp thoại Go To (Find and Replace, tab Go To) để nhập số trang cần chuyển đến.
+
+Q: Muốn đánh dấu chọn toàn bộ tài liệu MS-Word thì có thể chọn lệnh Select All từ tab nào?
+A: Home
+B: Insert
+C: Review
+D: View
+ANS: A
+EXP: Lệnh Select All nằm trong nhóm Editing của tab Home.
+
+Q: Muốn đánh dấu chọn toàn bộ tài liệu MS-Word thì không thể làm theo cách nào?
+A: Chọn lệnh từ tab Home
+B: Sử dụng tổ hợp phím Ctrl+A
+C: Click nhanh chuột 2 lần vào vùng Left Margin
+D: Click nhanh chuột 3 lần vào vùng Left Margin
+ANS: C
+EXP: Click 2 lần vào Left Margin chỉ chọn 1 đoạn, không chọn toàn bộ tài liệu. Click 3 lần chọn toàn bộ.
+
+Q: Với MS-Word, muốn dùng chuột đánh dấu chọn nhiều vùng văn bản thì phải kết hợp đè giữ phím nào?
+A: Shift
+B: Ctrl
+C: Alt
+D: Tab
+ANS: B
+EXP: Giữ Ctrl khi kéo chuột cho phép chọn nhiều vùng văn bản rời nhau.
+
+Q: Với MS-Word, muốn dùng chuột đánh dấu chọn vùng văn bản có dạng chữ nhật thì phải kết hợp đè giữ phím nào?
+A: Shift
+B: Ctrl
+C: Alt
+D: Tab
+ANS: C
+EXP: Giữ Alt khi kéo chuột cho phép chọn vùng văn bản hình chữ nhật (block selection).
+
+Q: Muốn cho hiện/ẩn các ký tự ẩn trong MS-Word thì có thể chọn nút Show/Hide ¶ từ tab nào?
+A: Home
+B: References
+C: Review
+D: View
+ANS: A
+EXP: Nút Show/Hide ¶ nằm trong nhóm Paragraph của tab Home.
+
+Q: Muốn cho hiện/ẩn các ký tự ẩn trong MS-Word thì không thể dùng cách nào?
+A: Sử dụng tổ hợp phím Ctrl+*
+B: Lần lượt nhấn các phím F10, H, 8
+C: Lần lượt nhấn các phím Alt, H, 8
+D: Lần lượt nhấn các phím Ctrl, H, 8
+ANS: D
+EXP: Ctrl, H, 8 không phải chuỗi phím hợp lệ để hiện/ẩn ký tự ẩn.
+
+Q: Với MS-Word, muốn khôi phục lại trạng thái trước (undo) thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+D
+B: Ctrl+U
+C: Ctrl+Y
+D: Ctrl+Z
+ANS: D
+EXP: Ctrl+Z là phím tắt Undo trong MS-Word.
+
+Q: Với MS-Word, muốn lặp lại hành động vừa thực hiện trước đó thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+D
+B: Ctrl+U
+C: Ctrl+Y
+D: Ctrl+Z
+ANS: C
+EXP: Ctrl+Y là phím tắt Redo/Repeat trong MS-Word.
+
+Q: Trường hợp sử dụng phím tắt nào sau đây không thể mở được hộp thoại Find and Replace?
+A: F5
+B: Ctrl+F
+C: Ctrl+H
+D: Ctrl+G
+ANS: B
+EXP: Ctrl+F mở Navigation Pane (chức năng Find), không mở hộp thoại Find and Replace đầy đủ. F5 và Ctrl+G mở Go To; Ctrl+H mở Replace.
+
+Q: Muốn sử dụng lệnh Split để hiển thị cùng lúc hai phần của cùng một tài liệu MS-Word thì truy cập tab nào?
+A: Insert
+B: Layout (hoặc Page Layout)
+C: Review
+D: View
+ANS: D
+EXP: Lệnh Split nằm trong tab View, nhóm Window.
+
+Q: Để xem cùng lúc hai tài liệu MS-Word trên một màn hình thì chọn lệnh nào?
+A: View > View Side by Side
+B: View > Split
+C: Review > View Side by Side
+D: Review > Split
+ANS: A
+EXP: View > View Side by Side dùng để xem song song hai tài liệu khác nhau trên cùng màn hình.
+
+Q: Bộ nhớ tạm Office Clipboard có thể lưu trữ tối đa bao nhiêu mục?
+A: 10
+B: 12
+C: 20
+D: 24
+ANS: D
+EXP: Office Clipboard lưu được tối đa 24 mục sao chép.
+
+Q: Muốn sử dụng lệnh Word Count để biết thống kê về tài liệu MS-Word thì truy cập tab nào?
+A: Home
+B: References
+C: Review
+D: View
+ANS: C
+EXP: Lệnh Word Count nằm trong tab Review, nhóm Proofing.
+
+Q: Có bao nhiêu loại Section Break trong MS-Word?
+A: 2
+B: 3
+C: 4
+D: Trên 4
+ANS: C
+EXP: MS-Word có 4 loại Section Break: Next Page, Continuous, Even Page, Odd Page.
+
+Q: Với Word, có thể chèn Section Break khi truy cập tab nào?
+A: Home
+B: Insert
+C: Layout (hoặc Page Layout)
+D: References
+ANS: C
+EXP: Section Break được chèn từ tab Layout (Page Layout) > nhóm Page Setup > Breaks.
+
+Q: Với MS-Word, không thể mở hộp Page Setup bằng cách nào?
+A: Truy cập tab Layout (hoặc Page Layout) rồi tìm mở
+B: Double-click vào vùng ứng với Left/Right Margins của Ruler ngang
+C: Double-click vào vị trí bất kỳ trên Ruler dọc
+D: Double-click vào vùng Margins
+ANS: D
+EXP: Double-click vào vùng Margins không mở hộp Page Setup; phải double-click vào vùng thước (ruler) xám.
+
+Q: Hộp Page Setup trong MS-Word không thể thiết lập điều nào?
+A: Khổ trang tài liệu
+B: Khoảng cách từ mép trang đến vị trí Header/Footer
+C: Các khoảng Margins
+D: Vị trí các Indent
+ANS: D
+EXP: Vị trí Indent được thiết lập trong hộp Paragraph, không phải Page Setup.
+
+Q: Với MS-Word, các thiết lập trong hộp Page Setup được áp dụng thống nhất cho toàn bộ phạm vi nào?
+A: Paragraph (Đoạn)
+B: Page (Trang)
+C: Section
+D: Tài liệu
+ANS: C
+EXP: Page Setup áp dụng theo Section; mỗi section có thể có thiết lập trang khác nhau.
+
+Q: Với MS-Word, muốn canh chỉnh nội dung theo chiều dọc trang tài liệu (Vertical alignment) thì tùy chọn từ đâu?
+A: Tab Home
+B: Hộp Paragraph
+C: Hộp Page Setup
+D: Hộp Word Options
+ANS: C
+EXP: Vertical alignment (canh chỉnh dọc trang) nằm trong tab Layout của hộp Page Setup.
+
+Q: MS-Word cung cấp bao nhiêu kiểu canh chỉnh văn bản theo chiều dọc trang tài liệu?
+A: 2
+B: 3
+C: 4
+D: Trên 4
+ANS: C
+EXP: Có 4 kiểu Vertical alignment: Top, Center, Justified, Bottom.
+
+Q: Với MS-Word, không thể hiệu chỉnh các khoảng Margins cho trang tài liệu từ đâu?
+A: Hộp Page Setup
+B: Hộp Paragraph
+C: Ruler ngang
+D: Ruler dọc
+ANS: B
+EXP: Hộp Paragraph thiết lập Indent và khoảng cách đoạn, không thiết lập Margins trang.
+
+Q: Với MS-Word, phân cột (columns) là chức năng được áp dụng thống nhất cho toàn bộ phạm vi nào?
+A: Đoạn văn bản
+B: Trang tài liệu
+C: Section
+D: Tài liệu
+ANS: C
+EXP: Phân cột áp dụng theo Section. Mỗi section có thể có số cột khác nhau.
+
+Q: Với tài liệu MS-Word có nhiều cột, muốn chuyển văn bản sang cột kế tiếp thì dùng tổ hợp phím nào?
+A: Alt+Enter
+B: Ctrl+Enter
+C: Shift+Enter
+D: Ctrl+Shift+Enter
+ANS: D
+EXP: Ctrl+Shift+Enter chèn Column Break, đẩy nội dung sang cột tiếp theo.
+
+Q: Với MS-Word, có thể mở hộp Font bằng cách sử dụng tổ hợp phím nào?
+A: Ctrl+F
+B: Alt+F
+C: Ctrl+D
+D: Alt+D
+ANS: C
+EXP: Ctrl+D mở hộp thoại Font trong MS-Word.
+
+Q: Muốn mở hộp Font trong MS-Word thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+Shift+F
+B: Alt+Shift+F
+C: Ctrl+Shift+D
+D: Alt+Shift+D
+ANS: A
+EXP: Ctrl+Shift+F cũng mở hộp Font (đặt focus vào danh sách Font name).
+
+Q: Trong Word, không thể thay đổi Font chữ bằng cách nào?
+A: Truy cập tab Home rồi chọn từ danh sách Font
+B: Nhấn Ctrl+D rồi chọn
+C: Nhấn Ctrl+F rồi chọn
+D: Nhấn Ctrl+Shift+F rồi chọn
+ANS: C
+EXP: Ctrl+F mở chức năng Find (tìm kiếm), không phải hộp Font.
+
+Q: Với MS-Word, chức năng định dạng Font được áp dụng thống nhất cho toàn bộ phạm vi nào?
+A: Văn bản được chọn
+B: Các đoạn được chọn
+C: Trang tài liệu hiện hành
+D: Các section được chọn
+ANS: A
+EXP: Định dạng Font áp dụng cho vùng văn bản được chọn (character-level formatting).
+
+Q: Với MS-Word, muốn thiết lập đầy đủ các thuộc tính về Font thì sử dụng gì?
+A: Các nút chức năng trên Ribbon khi vào tab Home
+B: Phím tắt
+C: Hộp Font
+D: Hộp Word Options
+ANS: C
+EXP: Hộp Font chứa đầy đủ tất cả các tùy chọn định dạng ký tự.
+
+Q: Với MS-Word, không thể mở hộp Paragraph bằng cách nào?
+A: Truy cập tab Home rồi tìm mở
+B: Truy cập tab Layout (hoặc Page Layout) rồi tìm mở
+C: Double-click vào vùng Margins
+D: Double-click vào các nút Indent trên Ruler ngang
+ANS: C
+EXP: Double-click vào vùng Margins không mở hộp Paragraph.
+
+Q: Với MS-Word, các thiết lập trong hộp Paragraph được áp dụng thống nhất cho toàn bộ phạm vi nào?
+A: Văn bản được chọn
+B: Các đoạn được chọn
+C: Trang tài liệu hiện hành
+D: Các section được chọn
+ANS: B
+EXP: Định dạng Paragraph áp dụng cho các đoạn (paragraph) được chọn.
+
+Q: Hộp Paragraph trong MS-Word không thể thiết lập điều nào?
+A: Kiểu canh chỉnh văn bản theo phương ngang
+B: Khoảng cách giữa các dòng (Line) trong đoạn (Paragraph)
+C: Các khoảng Margins
+D: Vị trí các Indent
+ANS: C
+EXP: Margins trang được thiết lập trong Page Setup, không phải hộp Paragraph.
+
+Q: Với MS-Word, tổ hợp phím Ctrl+5 có chức năng điều chỉnh khoảng cách như thế nào?
+A: Giữa các đoạn là 5pt
+B: Giữa các dòng trong đoạn là 5pt
+C: Giữa các dòng trong đoạn là 1.5 lines
+D: Giữa các dòng trong đoạn là 5 lines
+ANS: C
+EXP: Ctrl+5 thiết lập Line Spacing là 1.5 lines cho các đoạn được chọn.
+
+Q: Với MS-Word, từ hộp Paragraph không thể tùy chọn điều nào?
+A: Khoảng cách từ đoạn hiện hành đến đoạn liền kề bên trên hoặc bên dưới
+B: Đoạn hiện hành luôn nằm cùng trang với đoạn liền kề phía dưới
+C: Đoạn hiện hành luôn nằm khác trang với đoạn liền kề bên dưới
+D: Đoạn hiện hành luôn nằm khác trang với đoạn liền kề bên trên
+ANS: C
+EXP: Không có tùy chọn bắt buộc đoạn phải nằm khác trang với đoạn kề dưới trong hộp Paragraph.
+
+Q: Với MS-Word, muốn 1 đoạn văn bản luôn nằm cùng trang với đoạn liền kề bên dưới thì tùy chọn từ đâu?
+A: Tab Home
+B: Hộp Paragraph
+C: Hộp Page Setup
+D: Hộp Word Options
+ANS: B
+EXP: Tùy chọn "Keep with next" trong tab Line and Page Breaks của hộp Paragraph giúp đoạn luôn cùng trang với đoạn kề dưới.
+
+Q: Với MS-Word, có bao nhiêu kiểu canh chỉnh (align) văn bản theo phương ngang?
+A: 2
+B: 3
+C: 4
+D: Trên 4
+ANS: C
+EXP: Có 4 kiểu canh ngang: Left, Center, Right, Justify.
+
+Q: Với MS-Word, không thể canh chỉnh văn bản theo phương ngang bằng cách nào?
+A: Vào tab Home rồi chọn từ nhóm Paragraph
+B: Sử dụng tổ hợp phím tắt
+C: Tùy chọn từ hộp Page Setup
+D: Tùy chọn từ hộp Paragraph
+ANS: C
+EXP: Hộp Page Setup không có tùy chọn canh chỉnh ngang văn bản (chỉ có Vertical alignment).
+
+Q: Với MS-Word, không thể hiệu chỉnh vị trí các Indent cho đoạn bằng cách nào?
+A: Hộp Paragraph
+B: Ruler ngang
+C: Ruler dọc
+D: Nút chức năng trên Ribbon khi vào tab Home
+ANS: C
+EXP: Ruler dọc không có chức năng điều chỉnh Indent; chỉ Ruler ngang mới có.
+
+Q: Với MS-Word, có thể cài Tab stop từ đâu?
+A: Ruler dọc
+B: Ruler ngang
+C: Hộp Font
+D: Hộp Page Setup
+ANS: B
+EXP: Tab stop có thể cài trực tiếp bằng cách click lên Ruler ngang.
+
+Q: Trong Word, có thể cài đầy đủ các thuộc tính Tab stop từ đâu?
+A: Ruler ngang
+B: Ruler dọc
+C: Hộp Tabs
+D: Hộp Word Options
+ANS: C
+EXP: Hộp Tabs cho phép thiết lập đầy đủ vị trí, kiểu căn lề và ký tự điền (Leader) cho Tab stop.
+
+Q: Word có bao nhiêu kiểu Tab stop?
+A: 1
+B: 2
+C: 3
+D: Trên 3
+ANS: D
+EXP: Word có nhiều hơn 3 kiểu Tab stop: Left, Center, Right, Decimal, Bar.
+
+Q: Với MS-Word, có thể mở hộp Tabs bằng cách Double-click vào đâu?
+A: Mép trên Ruler ngang
+B: Mép dưới Ruler ngang
+C: Mép trái Ruler dọc
+D: Mép phải Ruler dọc
+ANS: B
+EXP: Double-click vào mép dưới (phần trắng) của Ruler ngang sẽ mở hộp thoại Tabs.
+
+Q: Với MS-Word, các thiết lập Tab stop được áp dụng thống nhất cho toàn bộ phạm vi nào?
+A: Văn bản được chọn
+B: Các đoạn được chọn
+C: Trang tài liệu hiện hành
+D: Các section được chọn
+ANS: B
+EXP: Tab stop là thuộc tính cấp đoạn (paragraph-level), áp dụng cho các đoạn được chọn.
+
+Q: Với MS-Word, ký hiệu đầu đoạn (Bullet) không thể là gì?
+A: Chữ cái
+B: Symbol
+C: Shape
+D: Picture
+ANS: C
+EXP: Bullet có thể là chữ cái, symbol, hoặc picture, nhưng không thể là Shape (hình vẽ).
+
+Q: Với MS-Word, thứ tự đầu đoạn (Numbering) không thể là gì?
+A: Chữ số Ả Rập
+B: Chữ số La Mã
+C: Chữ cái tiếng Anh
+D: Chữ cái tiếng Việt
+ANS: D
+EXP: MS-Word không hỗ trợ Numbering bằng chữ cái tiếng Việt có dấu.
+
+Q: Với MS-Word, muốn định nghĩa nội dung đính kèm theo thứ tự đầu đoạn thì có thể sử dụng lệnh nào?
+A: Define New Bullet
+B: Define New Multilevel List
+C: Insert Caption
+D: Insert Comment
+ANS: B
+EXP: Define New Multilevel List cho phép định nghĩa nội dung và cấu trúc danh sách đa cấp.
+
+Q: Với MS-Word, chức năng định dạng Bullet – Numbering được áp dụng thống nhất cho phạm vi nào?
+A: Văn bản được chọn
+B: Các đoạn được chọn
+C: Trang tài liệu hiện hành
+D: Các section được chọn
+ANS: B
+EXP: Bullet/Numbering là định dạng cấp đoạn, áp dụng cho các đoạn được chọn.
+
+Q: Với MS-Word, chức năng định dạng Border – Shading không thể áp dụng cho đối tượng nào?
+A: Khối văn bản được chọn
+B: Các đoạn được chọn
+C: Các ô (cell) được chọn trong table
+D: Hình ảnh được chọn
+ANS: D
+EXP: Border-Shading trong hộp thoại Borders and Shading không áp dụng trực tiếp cho hình ảnh (picture).
+
+Q: Với Text trong MS-Word, ngoài màu đồng nhất còn có thể xác lập thuộc tính nền (fill) kiểu nào?
+A: Mẫu chuyển sắc (gradient)
+B: Mẫu pattern
+C: Mẫu texture
+D: Picture
+ANS: A
+EXP: Text fill trong Text Effects hỗ trợ Gradient fill.
+
+Q: Với Text trong MS-Word, ngoài màu đồng nhất còn có thể xác lập thuộc tính viền (outline) kiểu nào?
+A: Mẫu chuyển sắc (gradient)
+B: Mẫu pattern
+C: Mẫu texture
+D: Picture
+ANS: A
+EXP: Text outline hỗ trợ Gradient (chuyển sắc) cho đường viền ký tự.
+
+Q: Với Text trong MS-Word, không thể áp dụng hiệu ứng nào?
+A: Shadow
+B: Reflection
+C: Glow
+D: Soft Edges
+ANS: D
+EXP: Soft Edges là hiệu ứng dành cho hình ảnh/shape, không áp dụng được cho Text.
+
+Q: Với Paragraph style trong MS-Word, không thể xác lập thuộc tính nào?
+A: Font
+B: Border and Shading
+C: Bullets and Numbering
+D: Columns
+ANS: D
+EXP: Columns (phân cột) là thiết lập cấp Section, không thể xác lập trong Paragraph style.
+
+Q: Với Character style trong MS-Word, không thể xác lập thuộc tính nào?
+A: Font
+B: Text Effects
+C: Border and Shading
+D: Bullets and Numbering
+ANS: D
+EXP: Bullets and Numbering là thuộc tính cấp đoạn, không thể xác lập trong Character style.
+
+Q: Với nội dung văn bản được chọn trong MS-Word, tổ hợp phím Ctrl+Space Bar có tác dụng gì?
+A: Trả Font color về màu Automatic
+B: Trả Paragraph Alignment về kiểu canh trái
+C: Trả về các xác lập định dạng ký tự theo Style được sử dụng cho nội dung
+D: Trả về các xác lập định dạng đoạn theo Style được sử dụng cho nội dung
+ANS: C
+EXP: Ctrl+Space Bar xóa các định dạng ký tự trực tiếp, trả về định dạng ký tự của Style đang áp dụng.
+
+Q: Với các đoạn được chọn trong MS-Word, tổ hợp phím Ctrl+Q có tác dụng gì?
+A: Trả Font color về màu Automatic
+B: Trả Paragraph Alignment về kiểu canh trái
+C: Trả về các xác lập định dạng ký tự theo Style được sử dụng cho nội dung
+D: Trả về các xác lập định dạng đoạn theo Style được sử dụng cho nội dung
+ANS: D
+EXP: Ctrl+Q xóa các định dạng đoạn trực tiếp, trả về định dạng đoạn của Style đang áp dụng.
+
+Q: Format Painter có chức năng gì?
+A: Tô màu ký tự
+B: Tô màu nền
+C: Định dạng ký tự và đoạn theo thiết lập mặc định
+D: Sao chép định dạng
+ANS: D
+EXP: Format Painter sao chép định dạng từ vùng được chọn và áp dụng vào vùng đích.
+
+Q: Format Painter trong MS-Word không thể sao chép định dạng cho loại đối tượng nào?
+A: Text
+B: Shape
+C: Picture
+D: SmartArt
+ANS: D
+EXP: Format Painter không áp dụng được cho SmartArt.
+
+Q: Với MS-Word, 2 tổ hợp phím tắt của chức năng sao chép định dạng là gì?
+A: Ctrl+C và Ctrl+V
+B: Ctrl+Shift+C và Ctrl+Shift+V
+C: Ctrl+Alt+C và Ctrl+Alt+V
+D: Alt+Shift+C và Alt+Shift+V
+ANS: B
+EXP: Ctrl+Shift+C sao chép định dạng, Ctrl+Shift+V dán định dạng.
+
+Q: Với MS-Word, nếu áp dụng chức năng Page Borders thì mục Apply to liệt kê bao nhiêu tùy chọn?
+A: 2
+B: 3
+C: 4
+D: Trên 4
+ANS: C
+EXP: Apply to có 4 tùy chọn: Whole document, This section, This section - First page only, This section - All except first page.
+
+Q: Khi áp dụng Page Borders với Measure from là "Edge of page", ngoài khai báo Margin còn có thể thực hiện thêm bao nhiêu tùy chọn?
+A: 1
+B: 2
+C: 3
+D: Trên 3
+ANS: A
+EXP: Khi Measure from = Edge of page, có thêm 1 tùy chọn bổ sung ngoài các khoảng Margin.
+
+Q: Khi áp dụng Page Borders với Measure from là "Text", ngoài khai báo Margin còn có thể thực hiện thêm bao nhiêu tùy chọn?
+A: 1
+B: 2
+C: 3
+D: Trên 3
+ANS: D
+EXP: Khi Measure from = Text, có nhiều hơn 3 tùy chọn bổ sung.
+
+Q: Với MS-Word, chức năng Page Color được áp dụng thống nhất cho phạm vi nào?
+A: Toàn bộ tài liệu
+B: Phạm vi trang được chỉ định
+C: Trang hiện hành
+D: Trang đầu của tài liệu
+ANS: A
+EXP: Page Color áp dụng cho toàn bộ tài liệu, không thể chỉ định từng trang.
+
+Q: Với Page Color trong MS-Word thì không thể làm điều nào?
+A: Tùy chỉnh độ trong suốt (Transparency)
+B: Sử dụng mẫu gradient
+C: Sử dụng mẫu pattern
+D: Sử dụng mẫu texture hoặc picture
+ANS: A
+EXP: Page Color không hỗ trợ tùy chỉnh độ trong suốt (Transparency).
+
+Q: Với MS-Word, chức năng Watermark được áp dụng cho phạm vi nào?
+A: Toàn bộ tài liệu
+B: Phạm vi trang được chỉ định
+C: Trang hiện hành
+D: Trang đầu của tài liệu
+ANS: A
+EXP: Watermark được chèn vào Header và áp dụng cho toàn bộ tài liệu (hoặc theo section).
+
+Q: Watermark trong MS-Word không thể là dạng nào?
+A: Hình ảnh
+B: Text nằm ngang
+C: Text nằm dọc
+D: Text nằm chéo
+ANS: C
+EXP: Watermark text không có tùy chọn nằm dọc (chỉ có nằm ngang - Horizontal hoặc nằm chéo - Diagonal).
+
+Q: Table trong MS-Word không thể được tạo bằng cách nào?
+A: Mở hộp Insert Table để khai báo
+B: Sử dụng Draw Table hoặc các phím phù hợp để vẽ
+C: Chuyển văn bản thông thường thành Table
+D: Chuyển columns thành table
+ANS: D
+EXP: Không có chức năng chuyển trực tiếp "columns" (phân cột văn bản) thành table trong MS-Word.
+
+Q: Trong phạm vi Table của MS-Word, tổ hợp phím Ctrl+Tab có tác dụng gì?
+A: Chuyển điểm chèn đến ô liền kề phía trước
+B: Chuyển điểm chèn đến ô liền kề phía sau
+C: Chuyển điểm chèn ra khỏi phạm vi Table
+D: Đặt 1 Tab character phía trước điểm chèn
+ANS: D
+EXP: Trong bảng, Tab di chuyển giữa các ô. Ctrl+Tab chèn ký tự Tab thực sự vào trong ô.
+
+Q: Khi đang ở ô cuối của Table, nhấn phím Tab thì điểm chèn sẽ chuyển đến đâu?
+A: Ra ngoài phạm vi Table
+B: Đến ô đầu của Table
+C: Đến ô đầu cùng hàng trong Table
+D: Đến ô đầu của hàng tự động được chèn thêm ở cuối Table
+ANS: D
+EXP: Nhấn Tab ở ô cuối bảng tự động tạo thêm một hàng mới và đặt điểm chèn vào ô đầu tiên của hàng đó.
+
+Q: Với Table trong MS-Word thì không thể làm điều nào?
+A: Trộn nhiều ô liền kề thành 1 ô
+B: Phân chia 1 ô thành nhiều ô
+C: Bố trí text theo phương chéo trong ô
+D: Tùy chọn cho hiện lặp lại nội dung dòng muốn làm tiêu đề khi sang trang
+ANS: C
+EXP: MS-Word không hỗ trợ bố trí text theo phương chéo trong ô bảng.
+
+Q: Với Table trong MS-Word thì phát biểu nào sau đây là sai?
+A: Có thể chèn hình ảnh vào các ô của Table
+B: Có thể chèn Table vào Text Box hoặc các Shape cho chèn Text
+C: Có thể cho/không cho bố trí Text bên trái và phải Table
+D: Có thể cho/không cho bố trí Text phủ lên Table
+ANS: D
+EXP: Không thể cho phép Text phủ (overlap) lên Table như với các đối tượng đồ họa khác.
+
+Q: Với Table trong MS-Word, có mấy kiểu canh chỉnh (align) text trong ô?
+A: 4
+B: 5
+C: 6
+D: Trên 6
+ANS: D
+EXP: Có 9 kiểu align text trong ô bảng (3 ngang × 3 dọc): Top Left, Top Center, Top Right, Middle Left, Middle Center, Middle Right, Bottom Left, Bottom Center, Bottom Right.
+
+Q: Với MS-Word, chức năng Sort hỗ trợ tối đa bao nhiêu tiêu chí sắp xếp?
+A: 1
+B: 2
+C: 3
+D: Trên 3
+ANS: C
+EXP: Hộp thoại Sort trong MS-Word hỗ trợ tối đa 3 tiêu chí sắp xếp (Then by).
+
+Q: Với MS-Word, có thể tạo Header/Footer bằng cách chọn lệnh từ tab nào?
+A: Insert
+B: Page Layout (hoặc Layout)
+C: References
+D: Review
+ANS: A
+EXP: Lệnh Header và Footer nằm trong nhóm Header & Footer của tab Insert.
+
+Q: Với MS-Word, không thể tạo Header/Footer bằng cách nào?
+A: Chọn lệnh từ tab Insert
+B: Chọn lệnh từ tab Layout (hoặc Page Layout)
+C: Double-click vào vùng Top Margin
+D: Double-click vào vùng Bottom Margin
+ANS: B
+EXP: Tab Layout không có lệnh tạo Header/Footer; phải dùng tab Insert hoặc double-click vào vùng Margin.
+
+Q: Với MS-Word, không thể tùy chọn điều nào sau đây về Header/Footer?
+A: Section sau có Header/Footer giống hoặc khác với section liền kề phía trước
+B: Trang đầu trong section có Header/Footer khác với các trang còn lại
+C: Trang cuối trong section có Header/Footer khác với các trang còn lại
+D: Trang chẵn trong section có Header/Footer khác với trang lẻ
+ANS: C
+EXP: MS-Word không có tùy chọn riêng cho trang cuối có Header/Footer khác với các trang còn lại.
+
+Q: Với MS-Word, có thể chèn nhiều dạng đối tượng đồ họa khi truy cập vào tab nào?
+A: Home
+B: Insert
+C: Page Layout (hoặc Layout)
+D: View
+ANS: B
+EXP: Tab Insert chứa các lệnh chèn đối tượng đồ họa: Picture, Shape, SmartArt, Chart...
+
+Q: Để quản lý các đối tượng đồ họa trong MS-Word, có thể mở Selection Pane từ tab nào?
+A: Home
+B: Insert
+C: References
+D: Review
+ANS: A
+EXP: Selection Pane có thể mở từ tab Home > Editing > Select > Selection Pane.
+
+Q: Khi đang chọn đối tượng đồ họa trong MS-Word, không thể mở Selection Pane từ tab nào?
+A: Home
+B: Page Layout (hoặc Layout)
+C: Review
+D: Format
+ANS: C
+EXP: Tab Review không có lệnh mở Selection Pane.
+
+Q: Selection Pane trong MS-Word không hỗ trợ điều nào?
+A: Chọn 1 hoặc nhiều đối tượng đồ họa trong trang tài liệu
+B: Chọn nội dung Text trong trang tài liệu
+C: Cho ẩn/hiện các đối tượng đồ họa trong trang tài liệu
+D: Chỉnh trật tự xếp chồng các đối tượng đồ họa trong trang tài liệu
+ANS: B
+EXP: Selection Pane chỉ quản lý các đối tượng đồ họa, không dùng để chọn nội dung text thông thường.
+
+Q: Với MS-Word, loại đối tượng nào dưới đây không hiển thị trong Selection Pane?
+A: Picture
+B: Shape / Text Box
+C: Chart / SmartArt
+D: Equation
+ANS: D
+EXP: Equation (công thức toán học) không xuất hiện trong Selection Pane.
+
+Q: Với MS-Word, biểu tượng Line Spacing có chức năng gì?
+A: Chỉnh khoảng cách giữa các đoạn và các dòng trong đoạn
+B: Canh chỉnh (align) dòng văn bản theo chiều dọc của đối tượng
+C: Canh chỉnh (align) dòng văn bản theo chiều dọc của ô trong Table
+D: Canh chỉnh (align) dòng văn bản theo chiều dọc của trang tài liệu
+ANS: A
+EXP: Biểu tượng Line Spacing dùng để chỉnh khoảng cách dòng và khoảng cách giữa các đoạn.
+
+Q: Với MS-Word, biểu tượng Align Text (trong đối tượng) có chức năng gì?
+A: Chỉnh khoảng cách giữa các đoạn và các dòng trong đoạn
+B: Canh chỉnh (align) dòng văn bản theo chiều dọc của đối tượng
+C: Canh chỉnh (align) dòng văn bản theo chiều dọc của ô trong Table
+D: Canh chỉnh (align) dòng văn bản theo chiều dọc của trang tài liệu
+ANS: B
+EXP: Nút Align Text trong tab Format của Shape/Text Box dùng để canh chỉnh text theo chiều dọc bên trong đối tượng.
+
+Q: Với MS-Word, biểu tượng Text Direction (trong Table) có chức năng gì?
+A: Chèn Drop Cap
+B: Chọn hướng bố trí text (Text Direction) trong đối tượng Shape/Text Box
+C: Chọn hướng bố trí text (Text Direction) trong ô của Table
+D: Chọn hướng bố trí text (Text Direction) trong trang tài liệu
+ANS: B
+EXP: Nút Text Direction trong tab Format của Shape/Text Box dùng để chọn hướng bố trí văn bản trong đối tượng.
+
+Q: Với MS-Word, biểu tượng Text Direction (trong Shape) có chức năng gì?
+A: Chèn Drop Cap
+B: Chọn hướng bố trí text (Text Direction) trong đối tượng Shape/Text Box
+C: Chọn hướng bố trí text (Text Direction) trong ô của Table
+D: Chọn hướng bố trí text (Text Direction) trong trang tài liệu
+ANS: A
+EXP: Câu 124 theo đáp án là A – Chèn Drop Cap. (Lưu ý: đây là câu hỏi liên quan đến biểu tượng cụ thể trong tài liệu gốc.)
+
+Q: Với MS-Word, không thể bố trí Text theo hướng dọc trong đâu?
+A: Ô của Table
+B: Đối tượng Shape / Text Box
+C: Các shape trong SmartArt
+D: Trang tài liệu
+ANS: D
+EXP: MS-Word không có chức năng bố trí toàn bộ text trong trang tài liệu theo hướng dọc.
+
+Q: Với MS-Word, có thể tùy chọn kiểu Wrap Text cho đối tượng khi truy cập tab nào?
+A: References
+B: Review
+C: View
+D: Format
+ANS: D
+EXP: Wrap Text nằm trong tab Format (xuất hiện khi chọn đối tượng đồ họa).
+
+Q: Khi chọn đối tượng đồ họa trong MS-Word thì nút Wrap Text liệt kê bao nhiêu mục chọn?
+A: 4
+B: 5
+C: 6
+D: Trên 6
+ANS: D
+EXP: Wrap Text có nhiều hơn 6 mục: In Line with Text, Square, Tight, Through, Top and Bottom, Behind Text, In Front of Text...
+
+Q: Với MS-Word, khi đối tượng được xác lập Wrap Text là "In Line with Text" thì có thể làm gì?
+A: Chọn nhiều đối tượng
+B: Xoay, chỉnh kích cỡ, vị trí
+C: Tùy chọn cho ẩn/hiện
+D: Sử dụng các lệnh Align thuộc tab Format
+ANS: B
+EXP: Khi Wrap = In Line with Text, đối tượng hoạt động như ký tự; vẫn có thể xoay và chỉnh kích cỡ nhưng bị giới hạn một số tính năng khác.
+
+Q: Với "Align Selected Objects", muốn áp dụng lệnh Align cho đối tượng đồ họa thì phải chọn ít nhất bao nhiêu đối tượng?
+A: 1
+B: 2
+C: 3
+D: Trên 3
+ANS: B
+EXP: Cần chọn ít nhất 2 đối tượng để dùng lệnh Align khi chế độ là "Align Selected Objects".
+
+Q: Với "Align to Page" hoặc "Align to Margin", muốn áp dụng lệnh Align thì phải chọn ít nhất bao nhiêu đối tượng?
+A: 1
+B: 2
+C: 3
+D: Trên 3
+ANS: A
+EXP: Khi căn chỉnh theo trang hoặc lề, chỉ cần chọn 1 đối tượng.
+
+Q: Với "Align Selected Objects", muốn áp dụng lệnh Distribute thì phải chọn ít nhất bao nhiêu đối tượng?
+A: 1
+B: 2
+C: 3
+D: Trên 3
+ANS: C
+EXP: Cần chọn ít nhất 3 đối tượng để dùng lệnh Distribute khi chế độ là "Align Selected Objects".
+
+Q: Với "Align to Page" hoặc "Align to Margin", muốn áp dụng lệnh Distribute thì phải chọn ít nhất bao nhiêu đối tượng?
+A: 1
+B: 2
+C: 3
+D: Trên 3
+ANS: A
+EXP: Khi Distribute theo trang hoặc lề, chỉ cần chọn 1 đối tượng.
+
+Q: Với đối tượng Picture trong MS-Word thì không thể tùy chỉnh thuộc tính nào?
+A: Màu (color)
+B: Độ trong suốt (transparency)
+C: Độ nét (sharpness)
+D: Độ sáng (brightness)
+ANS: B
+EXP: MS-Word không có tùy chỉnh Transparency (độ trong suốt) trực tiếp cho toàn bộ Picture trong hộp Format Picture thông thường.
+
+Q: Với đối tượng Picture trong MS-Word thì không thể làm điều nào?
+A: Xén bớt (crop) phạm vi
+B: Làm trong suốt 1 số vùng màu
+C: Áp dụng các hiệu ứng Artistic Effects, Shadow, Reflection, Glow, Soft Edges…
+D: Làm khung chứa để nhập text
+ANS: D
+EXP: Picture không thể hoạt động như Text Box để nhập text vào trong.
+
+Q: Với MS-Word, tab Format sẽ có nút Remove Background khi loại đối tượng nào được chọn?
+A: SmartArt
+B: Shape
+C: Text Box
+D: Picture
+ANS: D
+EXP: Nút Remove Background chỉ xuất hiện khi chọn đối tượng Picture.
+
+Q: Với MS-Word, trường hợp nào sau đây không thể làm hình ảnh trong suốt?
+A: Sử dụng nút Remove Background
+B: Sử dụng lệnh Set Transparent Color
+C: Sử dụng hình ảnh làm nền trang tài liệu
+D: Sử dụng hình ảnh làm thuộc tính fill cho các shape
+ANS: C
+EXP: Khi dùng hình ảnh làm nền trang (Page Color > Fill Effects > Picture), không thể điều chỉnh độ trong suốt.
+
+Q: MS-Word không cho sử dụng chức năng Edit Shape khi chọn loại shape nào?
+A: Text Box
+B: Các loại Connector (đường nối)
+C: Các loại Brace, Bracket (ngoặc)
+D: Các loại Shape khác
+ANS: B
+EXP: Các Connector (đường nối giữa các shape) không hỗ trợ chức năng Edit Shape.
+
+Q: Với chức năng Edit Shape trong MS-Word, ngoài Edit Points còn có thể làm gì?
+A: Áp dụng hiệu ứng cho Shape
+B: Chuyển đổi dạng Shape
+C: Chuyển Shape thành Picture
+D: Chuyển Shape thành SmartArt
+ANS: B
+EXP: Edit Shape cho phép "Change Shape" – chuyển sang dạng shape khác.
+
+Q: Khi dùng Edit Points để chỉnh Shape trong MS-Word, muốn bổ sung Point thì click tại vị trí muốn thêm kết hợp với phím nào?
+A: Shift
+B: Alt
+C: Ctrl
+D: Space bar
+ANS: C
+EXP: Ctrl+Click lên đường biên của Shape để thêm điểm mới.
+
+Q: Khi dùng Edit Points để chỉnh Shape trong MS-Word, muốn xóa Point thì click tại Point kết hợp với phím nào?
+A: Shift
+B: Alt
+C: Ctrl
+D: Space bar
+ANS: C
+EXP: Ctrl+Click vào một Point hiện có để xóa nó.
+
+Q: Khi dùng Edit Points, nếu right-click tại 1 Point thì Context Menu liệt kê bao nhiêu mục chọn?
+A: 4
+B: 5
+C: 6
+D: Trên 6
+ANS: D
+EXP: Context Menu khi right-click lên Point có nhiều hơn 6 mục chọn.
+
+Q: Về Edit Points để chỉnh dạng Shape trong MS-Word, phát biểu nào sau đây là sai?
+A: Có thể bổ sung, xóa hoặc chỉnh vị trí Point
+B: Có thể chuyển đổi giữa các thuộc tính Point (Smooth Point, Straight Point, Corner Point)
+C: Không thể chuyển đổi path kín (Close Path) thành hở (Open Path) hoặc ngược lại
+D: Không thể xử lý để Shape còn dưới 2 point
+ANS: C
+EXP: Thực ra có thể chuyển đổi giữa Close Path và Open Path qua Context Menu, nên phát biểu C là sai.
+
+Q: Khi chỉnh size cho đối tượng trong MS-Word, muốn kích cỡ co dãn đối xứng qua tâm thì drag các núm kết hợp với phím nào?
+A: Ctrl
+B: Alt
+C: Shift
+D: Space bar
+ANS: A
+EXP: Giữ Ctrl khi kéo núm chỉnh để co dãn đối xứng qua tâm đối tượng.
+
+Q: Khi xác lập thuộc tính fill cho shape trong MS-Word, không thể tùy chỉnh độ trong suốt đối với loại fill nào?
+A: Màu đồng nhất (solid color)
+B: Màu chuyển sắc (gradient color)
+C: Mẫu texture
+D: Mẫu pattern
+ANS: D
+EXP: Pattern fill không hỗ trợ tùy chỉnh độ trong suốt (Transparency).
+
+Q: Với MS-Word, có thể chèn hoặc loại bỏ trang bìa (Cover Page) bằng cách truy cập tab nào?
+A: Home
+B: Insert
+C: Page Layout (hoặc Layout)
+D: References
+ANS: B
+EXP: Cover Page nằm trong nhóm Pages của tab Insert.
+
+Q: Với MS-Word, có thể chèn Footnote/Endnote bằng cách truy cập tab nào?
+A: Home
+B: Insert
+C: Page Layout (hoặc Layout)
+D: References
+ANS: D
+EXP: Footnote và Endnote nằm trong nhóm Footnotes của tab References.
+
+Q: Có thể tự động tạo bảng mục lục (Table of Contents) cho tài liệu MS-Word bằng cách truy cập tab nào?
+A: Home
+B: Insert
+C: Page Layout (hoặc Layout)
+D: References
+ANS: D
+EXP: Table of Contents nằm trong tab References.
+
+Q: Muốn dùng Table of Contents để tạo mục lục cho tài liệu MS-Word thì cần làm gì?
+A: Phải định nghĩa các Styles
+B: Phải định nghĩa các Multilevel List
+C: Phải xác định phân cấp (Level) cho các đoạn văn muốn đưa vào mục lục
+D: Phải chèn Caption cho các nội dung muốn đưa vào mục lục
+ANS: C
+EXP: Table of Contents dựa vào Outline Level của các đoạn (thường thiết lập qua Heading Styles) để tạo mục lục.
+
+Q: Có thể tự động tạo bảng danh mục (Table of Figures) trong MS-Word bằng cách truy cập tab nào?
+A: Home
+B: Insert
+C: Page Layout (hoặc Layout)
+D: References
+ANS: D
+EXP: Table of Figures nằm trong tab References, cùng nhóm với Table of Contents.
+
+Q: Với MS-Word, các đối tượng muốn được liệt kê trong cùng 1 bảng danh mục (Table of Figures) thì phải thỏa điều kiện gì?
+A: Cùng 1 loại đối tượng
+B: Được xếp cùng 1 Label
+C: Được xếp cùng 1 Level
+D: Được gán cùng 1 Style
+ANS: B
+EXP: Table of Figures tổng hợp các đối tượng có cùng Label trong Caption (ví dụ: Figure, Table, Equation...).
+
+Q: Với MS-Word, tổ hợp phím Alt+Shift+T có chức năng chèn vào tài liệu thời gian nào?
+A: Hiện tại
+B: Đang thiết lập trong máy
+C: Khi save tài liệu lần cuối
+D: Khi mở tài liệu
+ANS: B
+EXP: Alt+Shift+T chèn field Time hiển thị giờ-phút-giây theo đồng hồ hệ thống.
+
+Q: Với MS-Word, muốn chèn cặp ngoặc để tự khai báo 1 field thì có thể nhấn phím nào?
+A: F9
+B: Ctrl+F9
+C: Alt+F9
+D: Shift+F9
+ANS: B
+EXP: Ctrl+F9 chèn cặp ngoặc nhọn {} để tự nhập field code thủ công.
+
+Q: Muốn hiện/ẩn Field code trong MS-Word thì có thể nhấn phím nào?
+A: F9
+B: Ctrl+F9
+C: Alt+F9
+D: Shift+F9
+ANS: C
+EXP: Alt+F9 chuyển đổi giữa hiển thị Field code và kết quả field trong toàn bộ tài liệu.
+
+Q: Với MS-Word, muốn tạo siêu liên kết (Hyperlink) cho nội dung được chọn thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+I
+B: Ctrl+H
+C: Ctrl+L
+D: Ctrl+K
+ANS: D
+EXP: Ctrl+K mở hộp thoại Insert Hyperlink.
+
+Q: Với MS-Word, muốn loại bỏ tất cả Hyperlink trong phạm vi chọn thì có thể sử dụng phím nào?
+A: Ctrl+F9
+B: Alt+F9
+C: Shift+F9
+D: Shift+Ctrl+F9
+ANS: D
+EXP: Ctrl+Shift+F9 (hay Shift+Ctrl+F9) hủy liên kết field, bao gồm cả Hyperlink, trong vùng được chọn.
+
+Q: MS-Word cung cấp bao nhiêu kiểu trộn thư (Mail Merge)?
+A: 2
+B: 3
+C: 4
+D: Trên 4
+ANS: D
+EXP: Mail Merge có nhiều hơn 4 kiểu: Letters, E-mail Messages, Envelopes, Labels, Directory.
+
+Q: Với chức năng Mail Merge, danh sách liên hệ (Recipients List) không thể là gì?
+A: Table của MS-Word
+B: Sheet của Excel hoặc cơ sở dữ liệu của Access
+C: Danh bạ của Outlook
+D: Danh sách nhập từ thiết bị Scan
+ANS: D
+EXP: Mail Merge không hỗ trợ nhập danh sách trực tiếp từ thiết bị scan.
+
+Q: Với MS-Word, chức năng Mail Merge không thể xuất kết quả ra đâu?
+A: Tài liệu MS-Word
+B: Tài liệu của phần mềm bất kỳ thuộc bộ MS-Office
+C: Thiết bị in
+D: Email
+ANS: B
+EXP: Mail Merge chỉ xuất ra Word document, máy in, hoặc email; không xuất ra định dạng phần mềm Office khác (Excel, PowerPoint...).
+
+Q: Với chức năng Mail Merge kiểu Labels thì MS-Word xử lý bảng như thế nào?
+A: Tạo Table có số lượng ô luôn bằng với số lượng nhãn
+B: Tạo Table có số lượng ô luôn nhiều hơn số lượng nhãn
+C: Tùy mẫu được chọn mà tạo Table có số ô bằng hoặc nhiều hơn số lượng nhãn
+D: Không tạo Table
+ANS: C
+EXP: Tùy thuộc mẫu nhãn (label template) được chọn, bảng có thể có đúng số ô hoặc nhiều hơn số nhãn cần in.
+
+Q: Với MS-Word, muốn thiết kế form thì rất cần tab nào?
+A: Home
+B: Insert
+C: Page Layout (hoặc Layout)
+D: Developer
+ANS: D
+EXP: Tab Developer chứa các công cụ tạo form: Content Controls, Legacy Form Fields, Protect Document...

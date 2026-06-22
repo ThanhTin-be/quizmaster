@@ -1,0 +1,1279 @@
+Q: Với MS-Excel, có thể nhấn phím nào để hiện các Key Tips cho phép truy cập lệnh từ bàn phím?
+A: F6
+B: F8
+C: F10
+D: F12
+ANS: C
+EXP: Nhấn F10 (hoặc Alt) sẽ hiển thị Key Tips trên Ribbon trong MS-Excel.
+
+Q: Theo xác lập ban đầu của MS-Excel, muốn thay đổi tỉ lệ zoom thì lăn bánh xe chuột kết hợp với đè giữ phím nào?
+A: Ctrl
+B: Alt
+C: Shift
+D: Esc
+ANS: A
+EXP: Mặc định trong Excel, Ctrl + lăn bánh xe chuột để phóng to/thu nhỏ tài liệu.
+
+Q: Với MS-Excel, muốn cho ẩn/hiện Ribbon thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+F1
+B: Shift+F1
+C: Alt+F1
+D: Ctrl+Shift+F1
+ANS: A
+EXP: Ctrl+F1 dùng để ẩn/hiện Ribbon trong MS-Excel (giống MS-Word).
+
+Q: Phát biểu nào sau đây là sai về thanh trạng thái (Status bar) trong MS-Excel?
+A: Được bố trí ở cuối cửa sổ
+B: Cung cấp các thông tin hữu ích về tài liệu
+C: Có thể tùy chọn thông tin cần hiển thị từ danh sách liệt kê sẵn
+D: Với mọi phiên bản MS-Word đều có thể tùy chọn cho ẩn/hiện Status bar
+ANS: D
+EXP: Câu D sai vì đề cập đến MS-Word thay vì MS-Excel, và không phải mọi phiên bản đều hỗ trợ ẩn/hiện Status bar.
+
+Q: Với MS-Excel, thành phần nào có thể tùy chọn hiện/ẩn từ tab View mà không thể xác lập từ Excel Options?
+A: Ruler
+B: Formula Bar
+C: Gridlines
+D: Headings
+ANS: A
+EXP: Ruler chỉ có thể bật/tắt từ tab View, không có trong hộp thoại Excel Options.
+
+Q: Trong hộp thoại Excel Options, có thể tùy chọn hiện/ẩn thành phần nào mà tab View không liệt kê?
+A: Thanh nhập công thức (Formula Bar)
+B: 2 thanh chứa tiêu đề cột và hàng (Headings)
+C: Lưới phân cách các ô (Gridlines)
+D: 2 Scroll bar
+ANS: D
+EXP: Hai Scroll bar (ngang và dọc) chỉ có thể bật/tắt từ Excel Options, không có trong tab View.
+
+Q: Trong hộp thoại Excel Options, không thể tùy chọn điều nào?
+A: Hướng di chuyển con trỏ ô khi nhấn phím Enter
+B: Hướng di chuyển con trỏ ô khi nhấn phím Tab
+C: Lăn bánh xe chuột để zoom tài liệu mà không cần kết hợp đè giữ phím
+D: Bổ sung lệnh cho Ribbon và Quick Access Toolbar
+ANS: B
+EXP: Excel Options không có tùy chọn thay đổi hướng di chuyển con trỏ khi nhấn phím Tab.
+
+Q: Với MS-Excel, ngoài từ Excel Options còn có thể bổ sung nút chức năng vào Quick Access Toolbar bằng cách nào?
+A: Thiết lập từ tab Insert
+B: Thiết lập từ tab Review
+C: Thiết lập từ tab View
+D: Right-click vào nút này trên Ribbon rồi chọn lệnh Add to Quick Access Toolbar
+ANS: D
+EXP: Right-click lên nút lệnh bất kỳ trên Ribbon rồi chọn "Add to Quick Access Toolbar".
+
+Q: Với MS-Excel, muốn sắp xếp lại vị trí các nút trong Quick Access Toolbar thì có thể làm thế nào?
+A: Đè giữ Ctrl + Drag nút này thả sang vị trí đích
+B: Đè giữ Alt + Drag nút này thả sang vị trí đích
+C: Đè giữ Shift + Drag nút này thả sang vị trí đích
+D: Thực hiện trong hộp thoại Excel Options
+ANS: D
+EXP: Phải vào Excel Options > Quick Access Toolbar để sắp xếp lại thứ tự các nút.
+
+Q: Trong hộp thoại Excel Options, không thể tùy chọn điều nào?
+A: Folder mặc định khi Open file lần đầu trong ca làm việc
+B: Folder mặc định khi Save lần đầu
+C: Dạng thức [format] file mặc định khi save
+D: Tên file mặc định khi save lần đầu
+ANS: D
+EXP: Excel Options không cho phép đặt tên file mặc định khi save lần đầu.
+
+Q: Khi bật "Save AutoRecover information…", sau mỗi khoảng thời gian xác lập chương trình sẽ tự động làm gì?
+A: Save lại file hiện hành
+B: Sao lưu thông tin của tài liệu vào 1 file dự phòng
+C: Hiện thông báo nhắc save tài liệu
+D: Phục hồi lại trạng thái của lần save trước đó cho tài liệu
+ANS: B
+EXP: AutoRecover tạo file dự phòng định kỳ để có thể khôi phục khi chương trình bị đóng đột ngột.
+
+Q: Với MS-Excel, ngoài double-click vào tên worksheet còn có thể đổi tên worksheet bằng cách chọn lệnh Rename Sheet từ tab nào?
+A: Home
+B: Data
+C: Review
+D: View
+ANS: A
+EXP: Tab Home có nhóm Cells > Format > Rename Sheet để đổi tên worksheet.
+
+Q: Với 1 tài liệu MS-Excel, không thể làm điều nào?
+A: Bổ sung thêm worksheet
+B: Di chuyển hoặc nhân bản worksheet
+C: Cho ẩn (Hide) worksheet
+D: Xóa worksheet duy nhất còn hiện
+ANS: D
+EXP: MS-Excel không cho phép xóa worksheet duy nhất còn đang hiển thị trong workbook.
+
+Q: Với MS-Excel, muốn nhân bản worksheet bằng cách drag Sheet Tab thì kết hợp với phím nào?
+A: Alt
+B: Shift
+C: Ctrl
+D: Space bar
+ANS: C
+EXP: Giữ Ctrl khi kéo Sheet Tab sang vị trí mới để tạo bản sao của worksheet.
+
+Q: Với 1 tài liệu MS-Excel, có thể xóa worksheet nào?
+A: Duy nhất còn lại
+B: Duy nhất còn hiện
+C: Đang ẩn (Hide)
+D: Đang được bảo vệ (Protect)
+ANS: D
+EXP: Worksheet đang được Protect vẫn có thể xóa được (chỉ cần unprotect hoặc xóa trực tiếp tùy phiên bản), trong khi không thể xóa worksheet duy nhất còn hiện.
+
+Q: Với MS-Excel, muốn tạo tài liệu mới thì có thể sử dụng tổ hợp phím nào?
+A: Alt+N
+B: Ctrl+N
+C: Shift+N
+D: Ctrl+Shift+N
+ANS: B
+EXP: Ctrl+N là phím tắt tạo workbook mới trong MS-Excel.
+
+Q: Với MS-Excel, thao tác nào sau đây không thể tạo tài liệu mới?
+A: Chọn File > New
+B: Lần lượt nhấn các phím F10, F, N, L
+C: Lần lượt nhấn các phím Alt, F, N, L
+D: Lần lượt nhấn các phím Ctrl, F, N, L
+ANS: D
+EXP: Chuỗi phím Ctrl, F, N, L không phải chuỗi hợp lệ để tạo tài liệu mới.
+
+Q: Với MS-Excel, lệnh File > Open có khả năng như thế nào?
+A: Không mở được file có dạng thức .xlsx
+B: Chỉ mở được file có dạng thức .xlsx
+C: Mở được file có dạng thức .xlsx và những dạng thức tương thích khác
+D: Mở được tất cả dạng thức file
+ANS: C
+EXP: File > Open mở được .xlsx và các định dạng tương thích như .xls, .csv, .txt... nhưng không phải tất cả mọi định dạng.
+
+Q: Nhóm nào dưới đây có dạng thức file mà MS-Excel chưa save được?
+A: xls, xlsx, xlsm
+B: xlt, xltx, xltm
+C: txt, ppt, pdf
+D: htm, mht, prn
+ANS: C
+EXP: MS-Excel không thể save ra định dạng .ppt (PowerPoint). txt và pdf thì save được, nhưng ppt thì không.
+
+Q: Dạng thức nào dưới đây khi save, MS-Excel sẽ tạo kèm 1 folder dữ liệu?
+A: xlsm
+B: htm
+C: mht
+D: pdf
+ANS: B
+EXP: Khi save định dạng .htm, MS-Excel tạo thêm một folder chứa các file tài nguyên đi kèm.
+
+Q: MS-Excel có thể save thành 1 file .xlsx cho phạm vi nào?
+A: Toàn bộ workbook
+B: Phạm vi ô được chọn
+C: Worksheet được chọn
+D: 1 số worksheet được chọn
+ANS: A
+EXP: Khi save .xlsx, MS-Excel lưu toàn bộ workbook, không thể chọn riêng từng worksheet hay vùng ô.
+
+Q: Khi save tài liệu MS-Excel theo dạng pdf, tùy chọn nào chưa có trong Options của Save As?
+A: Phạm vi ô được chọn
+B: Các Objects được chọn
+C: Toàn bộ dữ liệu trong worksheet hiện hành
+D: Toàn bộ dữ liệu trong workbook
+ANS: B
+EXP: Không có tùy chọn save PDF cho riêng "các Objects được chọn".
+
+Q: Khi save tài liệu MS-Excel theo dạng .xlsx, danh sách Tools trong hộp thoại Save As liệt kê bao nhiêu mục chọn?
+A: 1
+B: 2
+C: 3
+D: Trên 3
+ANS: D
+EXP: Danh sách Tools trong Save As có nhiều hơn 3 mục chọn.
+
+Q: Với MS-Excel, muốn chức năng Lock Cell có hiệu lực thì cần điều kiện gì?
+A: Không cần điều kiện gì
+B: Phải Save tài liệu thành file .xlsx
+C: Phải Protect Workbook
+D: Phải Protect Sheet
+ANS: D
+EXP: Lock Cell chỉ có hiệu lực khi worksheet đó được Protect Sheet.
+
+Q: Với MS-Excel, không thể thiết lập chức năng Protect Sheet khi truy cập tab nào?
+A: File
+B: Home
+C: Review
+D: View
+ANS: D
+EXP: Tab View không có lệnh Protect Sheet. Có thể thiết lập từ tab File, Home (nhóm Cells > Format), hoặc Review.
+
+Q: Với MS-Excel, muốn sử dụng chức năng in tài liệu thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+I
+B: Ctrl+P
+C: Alt+I
+D: Alt+P
+ANS: B
+EXP: Ctrl+P là phím tắt mở hộp thoại in trong MS-Excel.
+
+Q: Khi sử dụng chức năng in tài liệu MS-Excel, không thể tùy chọn điều nào?
+A: Chỉ in trong phạm vi ô được chọn
+B: Chỉ in hình ảnh và các object được chọn
+C: In toàn bộ dữ liệu trong worksheet hiện hành
+D: In toàn bộ dữ liệu trong workbook
+ANS: B
+EXP: Không có tùy chọn chỉ in riêng hình ảnh và các object được chọn trong hộp thoại in của Excel.
+
+Q: Khi sử dụng chức năng in tài liệu MS-Excel, không có tùy chọn nào?
+A: Kích cỡ (size) và lề (margins) trang in
+B: In các đường phân cách ô (gridlines) và thanh chứa tiêu đề cột và hàng (Headings)
+C: In thanh nhập công thức (Formula Bar)
+D: Số bản in (copies)
+ANS: C
+EXP: Không thể in Formula Bar – đây không phải thành phần dữ liệu có thể in ra.
+
+Q: Với MS-Excel, muốn đóng tài liệu thì không thể sử dụng tổ hợp phím nào?
+A: Ctrl+W
+B: Ctrl+F4
+C: Alt+W
+D: Alt+F4
+ANS: C
+EXP: Alt+W không phải phím tắt đóng tài liệu. Ctrl+W và Ctrl+F4 đóng file; Alt+F4 đóng ứng dụng.
+
+Q: Với MS-Excel, phát biểu nào sau đây là sai về cách ghi thứ tự hàng và cột?
+A: Các ký số trong dãy số tự nhiên 1,2,3… được sử dụng để ghi thứ tự hàng trong thanh Row-header
+B: Các ký số trong dãy số tự nhiên 1,2,3… có thể ghi thứ tự cột trong thanh Column-header
+C: Các chữ cái tiếng Anh như A, B, C, D, E, F… được sử dụng để ghi thứ tự cột trong thanh Column-header
+D: Các chữ cái tiếng Anh như A, B, C, D, E, F… có thể ghi thứ tự hàng trong thanh Row-header
+ANS: D
+EXP: Row-header luôn dùng số, không dùng chữ cái. Chữ cái chỉ dùng cho Column-header.
+
+Q: Theo xác lập ban đầu của MS-Excel, trường hợp nào sau đây không thể di chuyển con trỏ ô sang ô liền kề theo chiều ngang?
+A: Click tại ô này
+B: Nhấn phím mũi tên phải – trái
+C: Nhấn Tab hoặc Shift+Tab
+D: Nhấn Enter hoặc Shift+Enter
+ANS: D
+EXP: Mặc định, Enter di chuyển con trỏ xuống dưới (dọc), không phải sang ngang.
+
+Q: Theo xác lập ban đầu của MS-Excel, trường hợp nào sau đây không thể di chuyển con trỏ ô sang ô liền kề theo chiều dọc?
+A: Click tại ô này
+B: Nhấn phím mũi tên xuống – lên
+C: Nhấn Tab hoặc Shift+Tab
+D: Nhấn Enter hoặc Shift+Enter
+ANS: C
+EXP: Tab/Shift+Tab di chuyển con trỏ sang ngang (phải/trái), không phải theo chiều dọc.
+
+Q: Với MS-Excel, không thể tùy chọn để khi nhấn phím Enter thì con trỏ ô di chuyển theo hướng nào?
+A: Không di chuyển
+B: Di chuyển sang ô liền kề bên trên
+C: Di chuyển sang ô liền kề bên trái
+D: Di chuyển sang ô liền kề bên phải
+ANS: A
+EXP: Excel Options cho phép chọn hướng di chuyển sau Enter: Down, Up, Left, Right. Không có tùy chọn "Không di chuyển".
+
+Q: Với MS-Excel, phím PageUp và PageDown có tác dụng di chuyển con trỏ ô như thế nào?
+A: Lên hoặc xuống một trang in
+B: Lên hoặc xuống 1 màn hình hiển thị
+C: Đến biên trên và biên dưới trang in
+D: Đến worksheet kế tiếp và quay trở lại
+ANS: B
+EXP: PageUp/PageDown di chuyển con trỏ lên hoặc xuống 1 màn hình hiển thị.
+
+Q: Với MS-Excel, muốn di chuyển con trỏ ô đến ô đầu của worksheet thì có thể sử dụng phím nào?
+A: Home
+B: Ctrl+Home
+C: Alt+Home
+D: Shift+Home
+ANS: B
+EXP: Ctrl+Home đưa con trỏ về ô A1 (ô đầu tiên) của worksheet.
+
+Q: Với MS-Excel, muốn di chuyển con trỏ ô đến ô đầu của hàng thì có thể sử dụng phím nào?
+A: Home
+B: Shift+←
+C: Alt+←
+D: Ctrl+Alt+←
+ANS: A
+EXP: Phím Home đưa con trỏ về cột A của hàng hiện tại (đầu hàng).
+
+Q: Với MS-Excel, muốn di chuyển nhanh con trỏ ô đến ô rìa của khu vực chứa dữ liệu thì có thể sử dụng gì?
+A: Phím mũi tên
+B: Ctrl + phím mũi tên
+C: Shift + phím mũi tên
+D: Alt + phím mũi tên
+ANS: B
+EXP: Ctrl + phím mũi tên nhảy đến ô cuối/đầu của vùng dữ liệu liên tiếp theo hướng mũi tên.
+
+Q: Với MS-Excel, muốn di chuyển nhanh con trỏ ô đến ô giao giữa hàng và cột cuối cùng từng có dữ liệu thì sử dụng phím nào?
+A: End
+B: Ctrl+End
+C: Shift+End
+D: Alt+End
+ANS: B
+EXP: Ctrl+End đưa con trỏ đến ô cuối cùng (góc phải-dưới) của vùng từng có dữ liệu trong worksheet.
+
+Q: Trong 1 tài liệu MS-Excel có nhiều worksheet, muốn di chuyển qua lại giữa các worksheet thì có thể sử dụng tổ hợp phím nào?
+A: PageUp hoặc PageDown
+B: Shift+PageUp hoặc Shift+PageDown
+C: Alt+PageUp hoặc Alt+PageDown
+D: Ctrl+PageUp hoặc Ctrl+PageDown
+ANS: D
+EXP: Ctrl+PageDown chuyển sang worksheet kế tiếp, Ctrl+PageUp quay lại worksheet trước.
+
+Q: Với MS-Excel, muốn chọn toàn bộ các ô trong worksheet thì có thể sử dụng tổ hợp phím nào?
+A: Alt+A
+B: Ctrl+A
+C: Shift+A
+D: Ctrl+Shift+A
+ANS: B
+EXP: Ctrl+A chọn tất cả các ô trong worksheet (tương đương click vào nút góc trái trên cùng).
+
+Q: Với MS-Excel, muốn chọn toàn bộ các ô cùng cột với ô đang được chọn thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl + Space bar
+B: Shift + Space bar
+C: Alt + Space bar
+D: Ctrl + Alt + Space bar
+ANS: A
+EXP: Ctrl+Space bar chọn toàn bộ cột của ô/vùng đang được chọn.
+
+Q: Với MS-Excel, muốn chọn toàn bộ các ô cùng hàng với ô đang được chọn thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl + Space bar
+B: Shift + Space bar
+C: Alt + Space bar
+D: Ctrl + Alt + Space bar
+ANS: B
+EXP: Shift+Space bar chọn toàn bộ hàng của ô/vùng đang được chọn.
+
+Q: Với MS-Excel, muốn chọn 1 số ô liền kề thì có thể sử dụng tổ hợp phím nào?
+A: Alt + phím mũi tên
+B: Ctrl + phím mũi tên
+C: Shift + phím mũi tên
+D: Ctrl + Alt + phím mũi tên
+ANS: C
+EXP: Shift + phím mũi tên mở rộng vùng chọn sang các ô liền kề.
+
+Q: Theo xác lập ban đầu của MS-Excel, muốn điền dữ liệu vào ô và chuyển con trỏ sang ô liền kề bên dưới thì có thể sử dụng phím nào?
+A: Enter
+B: Shift+Enter
+C: Tab
+D: Shift+Tab
+ANS: A
+EXP: Enter điền dữ liệu và chuyển con trỏ xuống ô bên dưới (mặc định).
+
+Q: Theo xác lập ban đầu của MS-Excel, muốn điền dữ liệu vào ô và chuyển con trỏ sang ô liền kề bên trên thì có thể sử dụng phím nào?
+A: Enter
+B: Shift+Enter
+C: Tab
+D: Shift+Tab
+ANS: B
+EXP: Shift+Enter điền dữ liệu và chuyển con trỏ lên ô bên trên.
+
+Q: Theo xác lập ban đầu của MS-Excel, muốn điền dữ liệu vào ô và chuyển con trỏ sang ô liền kề bên phải thì có thể sử dụng phím nào?
+A: Enter
+B: Shift+Enter
+C: Tab
+D: Shift+Tab
+ANS: C
+EXP: Tab điền dữ liệu và chuyển con trỏ sang ô bên phải.
+
+Q: Theo xác lập ban đầu của MS-Excel, muốn điền dữ liệu vào ô và chuyển con trỏ sang ô liền kề bên trái thì có thể sử dụng phím nào?
+A: Enter
+B: Shift+Enter
+C: Tab
+D: Shift+Tab
+ANS: D
+EXP: Shift+Tab điền dữ liệu và chuyển con trỏ sang ô bên trái.
+
+Q: Với MS-Excel, muốn điền dữ liệu vào ô hiện hành mà con trỏ ô không chuyển sang ô lân cận thì nhấn phím nào?
+A: Enter
+B: Shift+Enter
+C: Alt+Enter
+D: Ctrl+Enter
+ANS: D
+EXP: Ctrl+Enter điền dữ liệu vào ô (hoặc nhiều ô đang chọn) mà không di chuyển con trỏ.
+
+Q: Với MS-Excel, muốn dữ liệu nhập được điền cùng lúc cho nhiều ô đang chọn thì nhấn phím nào?
+A: Enter
+B: Shift+Enter
+C: Alt+Enter
+D: Ctrl+Enter
+ANS: D
+EXP: Ctrl+Enter điền cùng một dữ liệu cho tất cả các ô đang được chọn cùng lúc.
+
+Q: Với MS-Excel, nếu muốn ngắt dòng trong cùng 1 ô khi nhập dữ liệu chuỗi thì nhấn phím nào?
+A: Enter
+B: Shift+Enter
+C: Alt+Enter
+D: Ctrl+Enter
+ANS: C
+EXP: Alt+Enter tạo ngắt dòng (line break) trong cùng một ô của Excel.
+
+Q: Với MS-Excel, muốn sửa dữ liệu trong ô hiện hành mà không cần nhập lại từ đầu thì có thể nhấn phím nào?
+A: F2
+B: F4
+C: F10
+D: F12
+ANS: A
+EXP: F2 đặt con trỏ vào cuối nội dung ô để chỉnh sửa (Edit mode).
+
+Q: Với MS-Excel, muốn nhập giá trị ngày hiện tại của hệ thống thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+D
+B: Ctrl+T
+C: Ctrl+; (chấm phẩy)
+D: Ctrl+, (phẩy)
+ANS: C
+EXP: Ctrl+; chèn ngày hiện tại (static date) của hệ thống vào ô.
+
+Q: Với MS-Excel, muốn xóa dữ liệu trong các ô đang được chọn thì có thể sử dụng phím nào?
+A: Delete
+B: Backspace
+C: Space bar
+D: Ctrl+X
+ANS: A
+EXP: Phím Delete xóa nội dung của các ô đang chọn mà không xóa định dạng.
+
+Q: Với MS-Excel, mục Clear thuộc nhóm Editing của tab Home liệt kê bao nhiêu lệnh?
+A: 2
+B: 3
+C: 4
+D: Trên 4
+ANS: D
+EXP: Mục Clear có nhiều hơn 4 lệnh: Clear All, Clear Formats, Clear Contents, Clear Comments, Clear Hyperlinks...
+
+Q: Với MS-Excel, mục Delete thuộc nhóm Cells của tab Home liệt kê bao nhiêu lệnh?
+A: 2
+B: 3
+C: 4
+D: Trên 4
+ANS: C
+EXP: Mục Delete có 4 lệnh: Delete Cells, Delete Sheet Rows, Delete Sheet Columns, Delete Sheet.
+
+Q: Với MS-Excel, có thể sử dụng thao tác nào để nhanh chóng thay đổi kích cỡ cột vừa đủ rộng cho việc hiển thị nội dung?
+A: Nhấn Ctrl+A rồi Ctrl+W
+B: Nhấn Alt+R
+C: Nhấn Ctrl+A rồi lần lượt nhấn Alt, O, C, A
+D: Không có sự kết hợp phím để thực hiện việc này, phải thao tác bằng chuột.
+ANS: C
+EXP: Ctrl+A chọn tất cả, rồi chuỗi phím Alt,O,C,A thực hiện AutoFit Column Width.
+
+Q: Với MS-Excel, có thể lần lượt nhấn các phím nào để mở hộp thoại Row Height?
+A: Alt,H,O,H
+B: Alt,H,F,H
+C: Alt,H,R,H
+D: Alt,H,E,H
+ANS: A
+EXP: Chuỗi phím Alt,H,O,H: Alt mở Key Tips, H vào tab Home, O vào Format, H mở Row Height.
+
+Q: Với MS-Excel, có thể lần lượt nhấn các phím nào để mở hộp thoại Column Width?
+A: Alt,H,F,W
+B: Alt,H,O,W
+C: Alt,H,C,W
+D: Alt,H,E,W
+ANS: B
+EXP: Chuỗi phím Alt,H,O,W: Alt mở Key Tips, H vào tab Home, O vào Format, W mở Column Width.
+
+Q: Phím tắt để thực hiện lệnh Undo và Redo trong MS-Excel là gì?
+A: Ctrl+U và Ctrl+R
+B: Ctrl+Z và Ctrl+Y
+C: Ctrl+U và Ctrl+Shift+U
+D: Ctrl+Shift+R và Ctrl+R
+ANS: B
+EXP: Ctrl+Z là Undo, Ctrl+Y là Redo trong MS-Excel (giống hầu hết ứng dụng Office).
+
+Q: Với MS-Excel, muốn mở nhanh hộp thoại Format Cells thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+1
+B: Ctrl+F1
+C: Ctrl+Shift+1
+D: Ctrl+Shift+F1
+ANS: A
+EXP: Ctrl+1 mở hộp thoại Format Cells trong MS-Excel.
+
+Q: Với MS-Excel, muốn dữ liệu Number hiển thị với 2 chữ số thập phân, dấu cách hàng ngàn và dấu trừ cho số âm thì dùng tổ hợp phím nào?
+A: Ctrl+!
+B: Ctrl+Alt+!
+C: Ctrl+Shift+!
+D: Alt+Shift+!
+ANS: C
+EXP: Ctrl+Shift+! áp dụng định dạng Number với 2 số thập phân và dấu phân cách hàng nghìn.
+
+Q: Với MS-Excel, muốn dữ liệu Number hiển thị theo kiểu thời gian trong ngày thì dùng tổ hợp phím nào?
+A: Ctrl+T
+B: Ctrl+@+T
+C: Ctrl+Shift+@
+D: Alt+Shift+@
+ANS: C
+EXP: Ctrl+Shift+@ áp dụng định dạng Time (giờ:phút AM/PM) cho dữ liệu số.
+
+Q: Với MS-Excel, muốn dữ liệu Number hiển thị theo định dạng day-month-year thì dùng tổ hợp phím nào?
+A: Alt+D
+B: Ctrl+Shift+D
+C: Ctrl+#
+D: Ctrl+Shift+#
+ANS: D
+EXP: Ctrl+Shift+# áp dụng định dạng ngày theo kiểu d-mmm-yy.
+
+Q: Với MS-Excel, muốn dữ liệu Number hiển thị theo định dạng tiền tệ mặc định thì dùng tổ hợp phím nào?
+A: Ctrl+$
+B: Ctrl+Shift+$
+C: Ctrl+Alt+$
+D: Alt+Shift+$
+ANS: B
+EXP: Ctrl+Shift+$ áp dụng định dạng Currency (tiền tệ) với 2 số thập phân.
+
+Q: Với MS-Excel, muốn dữ liệu Number hiển thị theo kiểu % thì dùng tổ hợp phím nào?
+A: Ctrl+%
+B: Ctrl+Shift+%
+C: Alt+%
+D: Ctrl+Alt+%
+ANS: B
+EXP: Ctrl+Shift+% áp dụng định dạng Percentage (phần trăm) không có chữ số thập phân.
+
+Q: Với MS-Excel, khi ô đang hiển thị số 5 (định dạng General), nếu nhấn Ctrl+Shift+% thì sẽ thấy kết quả gì?
+A: 500%
+B: 5%
+C: 0.5%
+D: 0.05%
+ANS: A
+EXP: Định dạng % nhân giá trị với 100, nên 5 × 100 = 500%.
+
+Q: Với các ô chứa giá trị number, tổ hợp phím Ctrl+Shift+~ có tác dụng hiển thị định dạng kiểu nào?
+A: Tiền tệ
+B: Thời gian
+C: % (phần trăm)
+D: General
+ANS: D
+EXP: Ctrl+Shift+~ áp dụng định dạng General – hiển thị số theo dạng tổng quát, không áp dụng định dạng đặc biệt.
+
+Q: Với MS-Excel, muốn lặp lại nhanh thao tác định dạng số lần cuối cùng cho ô được chọn thì có thể sử dụng phím nào?
+A: F4
+B: Ctrl+Shift+V
+C: Ctrl+Shift+R
+D: Ctrl+Shift+F4
+ANS: A
+EXP: F4 lặp lại thao tác vừa thực hiện trước đó, bao gồm cả thao tác định dạng.
+
+Q: Với MS-Excel, Format Painter có chức năng gì?
+A: Định dạng cho text
+B: Định dạng cho ô
+C: Sao chép định dạng
+D: Định dạng nhanh
+ANS: C
+EXP: Format Painter sao chép định dạng từ ô/vùng nguồn và áp dụng sang ô/vùng đích.
+
+Q: Với MS-Excel, trường hợp nào dưới đây là địa chỉ tuyệt đối?
+A: B$1:D$10
+B: $B1:$D10
+C: B$1$:D$10$
+D: $B$1:$D$10
+ANS: D
+EXP: Địa chỉ tuyệt đối cần có ký tự $ trước cả tên cột và số hàng: $B$1:$D$10.
+
+Q: Về tên vùng (Named Range) trong MS-Excel, phát biểu nào sau đây là sai?
+A: Là tên gán cho 1 hoặc nhóm ô
+B: Phải tuân theo các quy tắc nhất định
+C: Có thể được sử dụng trong các công thức cho dễ hiểu, dễ quản lý
+D: Áp dụng cho tất cả Worksheet trong Workbook
+ANS: D
+EXP: Named Range có thể được giới hạn phạm vi áp dụng cho 1 Worksheet cụ thể hoặc toàn Workbook, không nhất thiết phải áp dụng cho tất cả worksheet.
+
+Q: Ký tự nào sau đây có thể sử dụng để đặt tên vùng (Named Range) trong MS-Excel?
+A: Khoảng trắng
+B: +
+C: :
+D: \
+ANS: D
+EXP: Dấu gạch chéo ngược (\) có thể dùng trong tên vùng. Khoảng trắng, +, : đều không được phép.
+
+Q: Với MS-Excel, trường hợp nào sau đây không phải là phím tắt của lệnh thuộc nhóm Defined Names trong tab Formulas?
+A: F3
+B: Ctrl+F3
+C: Shift+F3
+D: Ctrl+Shift+F3
+ANS: C
+EXP: Shift+F3 mở Insert Function (không thuộc nhóm Defined Names). F3 dán tên, Ctrl+F3 mở Name Manager, Ctrl+Shift+F3 tạo tên từ vùng chọn.
+
+Q: Với MS-Excel, muốn mở hộp thoại Name Manager để quản lý các tên vùng thì có thể sử dụng phím nào?
+A: F3
+B: Ctrl+F3
+C: Shift+F3
+D: Alt+F3
+ANS: B
+EXP: Ctrl+F3 mở hộp thoại Name Manager để xem, tạo, sửa, xóa các Named Range.
+
+Q: Với MS-Excel, muốn xem trước kết quả của 1 công thức lồng trong 1 công thức khác thì đánh dấu chọn riêng công thức này rồi nhấn phím nào?
+A: F1
+B: F3
+C: F6
+D: F9
+ANS: D
+EXP: Khi đang trong chế độ chỉnh sửa ô, đánh dấu một phần công thức rồi nhấn F9 để xem kết quả tạm thời của phần đó.
+
+Q: Trường hợp nào sau đây không phải là thông báo lỗi trong MS-Excel?
+A: #NAME!
+B: #VALUE!
+C: #REF!
+D: #N/A
+ANS: A
+EXP: Tất cả đều là lỗi hợp lệ. Câu hỏi này theo đáp án là A – tuy nhiên #NAME! là lỗi thực trong Excel (tên hàm sai chính tả). Đây là câu hỏi bẫy: cả 4 đều là lỗi, theo đáp án gốc chọn A.
+
+Q: Khi ô A2 chứa chuỗi "A2", nếu nhập công thức =5/A2 thì sẽ hiện kết quả gì?
+A: 0
+B: 5
+C: #VALUE!
+D: #REF!
+ANS: C
+EXP: Không thể chia số cho chuỗi văn bản, nên Excel trả về lỗi #VALUE!.
+
+Q: Khi ô A2 chứa chuỗi "TINHOC", nếu nhập =6/VALUE(A2) thì sẽ hiện kết quả gì?
+A: #N/A
+B: #VALUE!
+C: 6
+D: TINHOC
+ANS: B
+EXP: Hàm VALUE("TINHOC") không thể chuyển chuỗi không phải số thành số, trả về lỗi #VALUE!, nên phép chia cũng lỗi.
+
+Q: Phát biểu nào sau đây không đúng về hàm trong MS-Excel?
+A: MOD cho kết quả là phần dư của phép chia
+B: NT cho kết quả là phần nguyên của phép chia
+C: AVERAGE cho kết quả là trung bình cộng của dãy số
+D: MIN cho kết quả là số nhỏ nhất của dãy số
+ANS: B
+EXP: Không có hàm NT trong Excel. Hàm lấy phần nguyên là INT (hoặc TRUNC). NT không tồn tại.
+
+Q: Với MS-Excel, công thức =OR(4>5,AND(7<10, 15>=8)) sẽ trả về kết quả gì?
+A: TRUE
+B: ĐÚNG
+C: FALSE
+D: SAI
+ANS: A
+EXP: AND(7<10, 15>=8) = AND(TRUE,TRUE) = TRUE. OR(FALSE, TRUE) = TRUE. Kết quả: TRUE.
+
+Q: Với MS-Excel, khi cần so sánh khác nhau giữa 2 giá trị trong hàm IF thì sử dụng toán tử nào?
+A: <>
+B: ><
+C: #
+D: #=
+ANS: A
+EXP: Toán tử <> nghĩa là "khác" (not equal) trong Excel.
+
+Q: Với MS-Excel, công thức =IF(OR(3>5,AND(15>10,15<>10)),"OK") sẽ trả về kết quả gì?
+A: OK
+B: TRUE
+C: FALSE
+D: Rỗng
+ANS: A
+EXP: AND(15>10, 15<>10) = AND(TRUE,TRUE) = TRUE. OR(FALSE,TRUE) = TRUE. IF(TRUE,"OK") = "OK".
+
+Q: Khi A3=8 và B3="G", công thức =IF(AND(A3>=8,B3="G"),"YES","NO") sẽ hiện kết quả gì?
+A: YES
+B: NO
+C: 8
+D: G
+ANS: A
+EXP: AND(8>=8, "G"="G") = AND(TRUE,TRUE) = TRUE. IF(TRUE,"YES","NO") = "YES".
+
+Q: Khi A3="Giám đốc", công thức =IF(OR(A3="GD",A3="PGD"),150000,50000) sẽ hiện kết quả gì?
+A: 50000
+B: 150000
+C: TRUE
+D: FALSE
+ANS: A
+EXP: "Giám đốc" không bằng "GD" hay "PGD", nên OR = FALSE. IF(FALSE,...) trả về 50000.
+
+Q: Khi A3="KT" và B3=500, công thức =IF(AND(A3="KT",B3>550),"Đạt","Không đạt") sẽ hiện kết quả gì?
+A: "Không đạt"
+B: "Đạt"
+C: TRUE
+D: FALSE
+ANS: A
+EXP: AND("KT"="KT", 500>550) = AND(TRUE,FALSE) = FALSE. IF(FALSE,...) = "Không đạt".
+
+Q: Khi A2="9FALSE", công thức =IF(MID("A2",2,5)="FALSE",1000) sẽ hiện kết quả gì?
+A: 1000
+B: FALSE
+C: 0
+D: #REF!
+ANS: B
+EXP: MID("A2",2,5) xử lý chuỗi ký tự "A2" (không phải tham chiếu ô), lấy từ vị trí 2 lấy 5 ký tự = "2" (chỉ còn 1 ký tự). "2"="FALSE" là FALSE. IF(FALSE,1000) trả về FALSE (không có đối số thứ 3).
+
+Q: Trường hợp nào sau đây được MS-Excel chấp nhận?
+A: =IF(B5="Shirt",IF(A5="Large",20,10),"Unavailable")
+B: =IF(B5="Shirt",=IF(A5="Large",20,10),"Unavailable")
+C: =IF(B5="Shirt",IF(A5="Large",20,10,"Unavailable")
+D: =IF(B5="Shirt",IF(A5="Large",20,10,"Unavailable"))
+ANS: A
+EXP: Phương án A có cú pháp đúng: IF lồng nhau không dùng dấu = ở trong, đóng ngoặc đúng.
+
+Q: Trường hợp nào sau đây không được MS-Excel chấp nhận?
+A: =IF(B9>500,IF(F9="Yes",B9*B20),"Empty")
+B: =IF(B9>500,IF(F9="Yes",B9*B20,B9*B21))
+C: =IF(B9>500,IF(F9="Yes",B9*B20,B9*B21),"Empty")
+D: =IF(B9>500,=IF(F9="Yes",B9*B20,B9*B21,"Empty"))
+ANS: D
+EXP: Phương án D có dấu = ở trong hàm IF lồng (=IF bên trong), đây là cú pháp sai.
+
+Q: Với MS-Excel, toán tử nào được sử dụng để nối chuỗi trong công thức?
+A: +
+B: &
+C: _ (gạch dưới)
+D: , (phẩy)
+ANS: B
+EXP: Ký tự & là toán tử nối chuỗi (concatenation) trong Excel.
+
+Q: Hai ô A5="TIN" và B5="HOC". Muốn hiển thị kết quả "TIN-HOC" thì nhập công thức nào?
+A: =A5-B5
+B: =A5+"-"+B5
+C: =A5&-&B5
+D: =A5&"-"&B5
+ANS: D
+EXP: Dùng & để nối chuỗi, dấu gạch ngang phải đặt trong dấu nháy kép: =A5&"-"&B5.
+
+Q: Khi A1="UNG DUNG MAY TINH", công thức =LEFT("A1",LEN("012345")) sẽ hiện kết quả gì?
+A: UNG DUN
+B: UNG DU
+C: A1
+D: #REF!
+ANS: C
+EXP: "A1" là chuỗi ký tự, không phải tham chiếu ô. LEFT("A1",...) lấy ký tự từ chuỗi "A1". LEN("012345")=6. LEFT("A1",6) = "A1" (chỉ có 2 ký tự).
+
+Q: Khi A2="Mua Xuan Tren Thanh Pho", công thức =RIGHT("A2",10) sẽ hiện kết quả gì?
+A: Thanh Pho
+B: en Thanh Pho
+C: A2
+D: #REF!
+ANS: C
+EXP: "A2" trong nháy kép là chuỗi ký tự "A2", không phải tham chiếu ô. RIGHT("A2",10) = "A2" (chỉ có 2 ký tự).
+
+Q: Trong 1 ô của bảng tính MS-Excel, nếu nhập =MID("K7012",3,2) sẽ hiện kết quả gì?
+A: 1
+B: 01
+C: 701
+D: #NAME?
+ANS: B
+EXP: MID("K7012",3,2) lấy 2 ký tự từ vị trí 3 của chuỗi "K7012": ký tự 3="0", ký tự 4="1" → "01".
+
+Q: Trong 1 ô của bảng tính MS-Excel, nếu nhập =MID("K7012",3,2)*1 sẽ hiện kết quả gì?
+A: #VALUE!
+B: 1
+C: 01
+D: 701
+ANS: B
+EXP: MID("K7012",3,2) = "01". "01"*1 = 1 (chuyển chuỗi số thành số, số 0 đứng đầu bị bỏ).
+
+Q: Các đối mục của hàm DATE trong MS-Excel có thứ tự là gì?
+A: day, month, year
+B: year, month, day
+C: year, day, month
+D: month, day, year
+ANS: B
+EXP: Cú pháp: =DATE(year, month, day).
+
+Q: Nếu ô A5 chứa ngày 14/04/2017, hàm =DAY(A5) sẽ trả về kết quả là gì?
+A: 2017
+B: 4
+C: 14
+D: 42839
+ANS: C
+EXP: Hàm DAY() trả về ngày trong tháng: ngày 14/04/2017 → 14.
+
+Q: Hàm =MONTH("09-Jan-2017") trong MS-Excel trả về kết quả theo định dạng General là gì?
+A: 1
+B: 9
+C: 09
+D: 2017
+ANS: A
+EXP: MONTH("09-Jan-2017") trả về tháng của ngày đó: tháng 1 (January) → 1.
+
+Q: Khi A1 chứa chuỗi "2016", công thức =LEN("A1") sẽ hiện kết quả gì?
+A: 1
+B: 2
+C: 4
+D: 2016
+ANS: B
+EXP: "A1" là chuỗi ký tự gồm 2 ký tự ('A' và '1'), nên LEN("A1") = 2.
+
+Q: Phát biểu nào sau đây là sai về hàm SUM trong MS-Excel?
+A: Có chức năng tính tổng các số
+B: Số lượng đối mục tối đa là 30 với phiên bản 2003
+C: Số lượng đối mục tối đa là 255 với phiên bản 2007 về sau
+D: Số lượng đối mục tối đa không thay đổi giữa các phiên bản
+ANS: D
+EXP: Số lượng đối mục của SUM đã thay đổi giữa các phiên bản (30 trong 2003, 255 từ 2007), nên phát biểu D là sai.
+
+Q: Với MS-Excel, công thức =SUM(4,"1",TRUE,LEFT("1A")) sẽ trả về kết quả gì?
+A: 5
+B: 6
+C: 7
+D: #VALUE!
+ANS: C
+EXP: SUM tự chuyển "1"→1, TRUE→1, LEFT("1A")=LEFT("1A",1)="1"→1. Tổng: 4+1+1+1=7.
+
+Q: Với MS-Excel, công thức =SUM(4,"1", FALSE,LEFT("1A")) sẽ trả về kết quả gì?
+A: 5
+B: 6
+C: 7
+D: #VALUE!
+ANS: B
+EXP: SUM: "1"→1, FALSE→0, LEFT("1A")="1"→1. Tổng: 4+1+0+1=6.
+
+Q: Với MS-Excel, công thức =SUM(4,"1",TRUE,RIGHT("1A")) sẽ trả về kết quả gì?
+A: 5
+B: 6
+C: 7
+D: #VALUE!
+ANS: D
+EXP: RIGHT("1A")="A". SUM không thể chuyển "A" thành số → trả về #VALUE!.
+
+Q: Hàm SUMIFS của MS-Excel có chức năng tính tổng các dữ liệu number thỏa mãn bao nhiêu điều kiện?
+A: Chỉ 1 điều kiện
+B: 1 số điều kiện giới hạn
+C: Trên 1 điều kiện
+D: 1 hoặc nhiều điều kiện
+ANS: D
+EXP: SUMIFS hỗ trợ 1 hoặc nhiều điều kiện (khác SUMIF chỉ 1 điều kiện).
+
+Q: Khi A2=10, công thức =PRODUCT(A2,2) sẽ hiện kết quả gì?
+A: 5
+B: 8
+C: 12
+D: 20
+ANS: D
+EXP: PRODUCT tính tích: 10 × 2 = 20.
+
+Q: Khi A3=9, công thức =SQRT(A3) sẽ hiện kết quả gì?
+A: 3
+B: 9
+C: 81
+D: #VALUE!
+ANS: A
+EXP: SQRT(9) = căn bậc hai của 9 = 3.
+
+Q: Trường hợp nào sau đây không được MS-Excel chấp nhận?
+A: =MIN(A7:A30)
+B: =MAX(A7:A30)
+C: =AVERAGE(A7:A30)
+D: =DMIN(A7:A30)
+ANS: D
+EXP: Hàm DMIN yêu cầu 3 đối mục: database, field, criteria. =DMIN(A7:A30) thiếu đối mục nên không hợp lệ.
+
+Q: Với MS-Excel, công thức =MAX(2,3,9)-MIN(2,3,9)+COUNT(0,1,"ABC") sẽ trả về kết quả gì?
+A: 7
+B: 8
+C: 9
+D: #VALUE!
+ANS: C
+EXP: MAX(2,3,9)=9, MIN(2,3,9)=2, COUNT(0,1,"ABC")=2 (chỉ đếm số). 9-2+2=9.
+
+Q: Khi vùng A1:A4 chứa lần lượt: 1,A,B,C, công thức =AVERAGE(A1:A4) sẽ hiện kết quả gì?
+A: 0.25
+B: 1
+C: #VALUE!
+D: #REF!
+ANS: B
+EXP: AVERAGE bỏ qua ô chứa chuỗi, chỉ tính trung bình các số. Chỉ có 1 số (giá trị 1), nên AVERAGE = 1.
+
+Q: Khi A3=23456, công thức =ROUND(A3,-3) sẽ hiện kết quả gì?
+A: 23456
+B: 23400
+C: 23000
+D: #VALUE!
+ANS: C
+EXP: ROUND(23456,-3) làm tròn đến hàng nghìn: 23456 → 23000.
+
+Q: Công thức =INT(15/6)+MOD(3,7) cho kết quả là bao nhiêu?
+A: 2
+B: 3
+C: 4
+D: 5
+ANS: D
+EXP: INT(15/6)=INT(2.5)=2. MOD(3,7)=3. 2+3=5.
+
+Q: Nếu A3=-120, công thức nào sau đây sẽ cho giá trị là 120?
+A: =SQRT(A3)
+B: =INT(A3)
+C: =ABS(A3)
+D: =MAX(A3)
+ANS: C
+EXP: ABS(-120) trả về giá trị tuyệt đối = 120.
+
+Q: Khi vùng A1:A4 chứa lần lượt: A,2,3,4, công thức =COUNT(A1:A4) sẽ hiện kết quả gì?
+A: 1
+B: 3
+C: 4
+D: 9
+ANS: B
+EXP: COUNT chỉ đếm các ô chứa số. Có 3 ô số (2,3,4), ô "A" là chuỗi không được đếm → 3.
+
+Q: Phát biểu nào sau đây là không đúng về hàm VLOOKUP của MS-Excel?
+A: Dò tìm giá trị từ cột đầu (bên trái) của một bảng dữ liệu để trả về 1 giá trị nằm cùng hàng
+B: Dò tìm giá trị từ hàng đầu (bên trên) của một bảng dữ liệu để trả về 1 giá trị nằm cùng cột
+C: Về giá trị dò, có thể tùy chọn dò chính xác hoặc tương đối gần bằng
+D: Nếu không dò được sẽ thông báo lỗi #N/A
+ANS: B
+EXP: Phát biểu B mô tả hàm HLOOKUP, không phải VLOOKUP. VLOOKUP dò theo cột đầu.
+
+Q: Phát biểu nào sau đây là không đúng về hàm HLOOKUP của MS-Excel?
+A: Dò tìm giá trị từ cột đầu (bên trái) của một bảng dữ liệu để trả về 1 giá trị nằm cùng hàng
+B: Dò tìm giá trị từ hàng đầu (bên trên) của một bảng dữ liệu để trả về 1 giá trị nằm cùng cột
+C: Về giá trị dò, có thể tùy chọn dò chính xác hoặc tương đối gần bằng
+D: Nếu không dò được sẽ thông báo lỗi #N/A
+ANS: A
+EXP: Phát biểu A mô tả hàm VLOOKUP. HLOOKUP dò theo hàng đầu tiên (ngang).
+
+Q: Với MS-Excel, có thể thay thế hàm VLOOKUP bằng cách kết hợp các hàm nào?
+A: HLOOKUP và IF
+B: HLOOKUP và MATCH
+C: INDEX và MATCH
+D: MATCH và IF
+ANS: C
+EXP: Kết hợp INDEX và MATCH là cách linh hoạt hơn để thay thế VLOOKUP, không bị giới hạn dò từ trái sang phải.
+
+Q: Nếu 1 ô của MS-Excel hiện kết quả #N/A thì đó là khi nào?
+A: Hàm HLOOKUP hoặc VLOOKUP không dò tìm được dữ liệu
+B: Hàm MATCH không dò tìm được dữ liệu
+C: Hàm INDEX không dò tìm được dữ liệu
+D: Dữ liệu chuỗi
+ANS: D
+EXP: Theo đáp án gốc là D. #N/A có thể xuất hiện từ nhiều hàm (VLOOKUP, HLOOKUP, MATCH...) khi không tìm thấy giá trị, không phải chỉ riêng "dữ liệu chuỗi".
+
+Q: Phát biểu nào sau đây là không đúng về hàm MATCH của MS-Excel?
+A: Kết quả trả về là thứ tự vị trí của giá trị dò tìm được trong vùng dò tìm
+B: Vùng dò tìm có thể là một mảng hoặc tập hợp các ô trên cùng một cột hoặc một hàng
+C: Các phần tử trong vùng dò không cần phải sắp xếp theo hướng tăng hoặc giảm với mọi cách dò (match_type)
+D: Nếu không dò được sẽ thông báo lỗi #N/A
+ANS: C
+EXP: Phát biểu C sai: khi match_type=1 (tìm gần bằng lớn nhất) cần sắp xếp tăng dần; match_type=-1 cần giảm dần. Chỉ match_type=0 (chính xác) không cần sắp xếp.
+
+Q: Phát biểu nào sau đây là không đúng về hàm INDEX của MS-Excel?
+A: Trả về một giá trị hay tham chiếu đến một giá trị trong một bảng hoặc một mảng
+B: Cú pháp có 2 dạng: INDEX(array,...) và INDEX(reference,...)
+C: Không cần sắp xếp các phần tử theo bất kỳ tiêu chí nào
+D: Nếu các giá trị _num vượt quá phạm vi tham chiếu sẽ báo lỗi #REF?
+ANS: D
+EXP: Theo đáp án gốc là D. Lỗi khi vượt phạm vi là #REF! (không phải #REF?), nhưng có tài liệu ghi khác nhau; đây là phát biểu không đúng trong ngữ cảnh đề thi.
+
+Q: Với MS-Excel, các nội dung trong hộp thoại Data Validation được bố trí thành bao nhiêu tab?
+A: 2
+B: 3
+C: 4
+D: Trên 4
+ANS: B
+EXP: Hộp thoại Data Validation có 3 tab: Settings, Input Message, Error Alert.
+
+Q: Với MS-Excel, nhóm nào sau đây liệt kê tên các tab trong hộp thoại Data Validation?
+A: Settings, Input Message, Error Alert
+B: Settings, Message, Error
+C: Settings, Input, Error
+D: Settings, Message, Alert
+ANS: A
+EXP: Ba tab của Data Validation là: Settings, Input Message, Error Alert.
+
+Q: Với MS-Excel, phần Validation Criteria trong hộp thoại Data Validation liệt kê bao nhiêu mục cho phép chọn làm tiêu chí?
+A: 2
+B: 3
+C: 4
+D: Trên 4
+ANS: D
+EXP: Có nhiều hơn 4 tiêu chí: Any value, Whole number, Decimal, List, Date, Time, Text length, Custom.
+
+Q: Với MS-Excel, muốn loại bỏ tất cả các thiết lập Data Validation thì có thể làm thế nào?
+A: Nhấn phím Delete
+B: Mở hộp thoại Data Validation và chọn Clear All
+C: Chọn mục lệnh Clear Validation Circles
+D: Right-click vào bảng tính và chọn Clear Contents
+ANS: B
+EXP: Chọn toàn bộ bảng, mở Data Validation rồi nhấn Clear All để xóa tất cả thiết lập xác thực dữ liệu.
+
+Q: Muốn sắp xếp dữ liệu trong bảng tính MS-Excel thì có thể chọn lệnh từ tab nào?
+A: Formulas
+B: Data
+C: Review
+D: View
+ANS: B
+EXP: Tab Data chứa nhóm Sort & Filter với các lệnh sắp xếp dữ liệu.
+
+Q: MS-Excel cho sử dụng bao nhiêu trường làm các cấp tiêu chí sắp xếp dữ liệu?
+A: Tối đa là 2
+B: Tối đa là 3
+C: Tối đa là 4
+D: Tất cả các trường trong vùng dữ liệu
+ANS: D
+EXP: MS-Excel (từ 2007 trở đi) cho phép sắp xếp theo tất cả các trường trong vùng dữ liệu, không giới hạn 3 hay 4.
+
+Q: Với MS-Excel, không thể chọn lệnh Sort A to Z hoặc Sort Z to A từ đâu?
+A: Trình đơn ngữ cảnh (Context Menu)
+B: Tab Home
+C: Tab Data
+D: Tab Review
+ANS: D
+EXP: Tab Review không có lệnh sắp xếp. Sort A to Z/Z to A có trong Context Menu, tab Home (nhóm Editing), và tab Data.
+
+Q: Với MS-Excel, không thể áp dụng chức năng Filter bằng cách truy cập từ đâu?
+A: Trình đơn ngữ cảnh (Context Menu)
+B: Tab Home
+C: Tab Data
+D: Tab Review
+ANS: D
+EXP: Tab Review không có chức năng Filter. AutoFilter có thể bật từ Context Menu, tab Home, hoặc tab Data.
+
+Q: Muốn bật/tắt chức năng Filter trong MS-Excel thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+L
+B: Ctrl+Shift+L
+C: Ctrl+Alt+L
+D: Alt+Shift+L
+ANS: B
+EXP: Ctrl+Shift+L bật/tắt AutoFilter trong MS-Excel.
+
+Q: Tình huống nào sau đây không cần đến Advanced Filter mà có thể sử dụng AutoFilter để thực hiện?
+A: Lọc cá nhân có ngày sinh nhật trong tháng 3
+B: Lọc cá nhân Nữ ở Đồng Nai hoặc Nam ở Vũng Tàu
+C: Lọc cá nhân đang giữ chức Giám đốc hoặc Nữ đang giữ chức trưởng phòng có trình độ Cao đẳng
+D: Lọc cá nhân có điểm môn Tin học dưới 5
+ANS: D
+EXP: Lọc theo điều kiện đơn giản trên một cột (điểm < 5) có thể thực hiện bằng AutoFilter. Các trường hợp khác cần điều kiện phức tạp hơn, cần Advanced Filter.
+
+Q: Chức năng Advanced Filter trong MS-Excel không thể xuất kết quả lọc ra đâu?
+A: Vùng khác trong Worksheet hiện hành
+B: Worksheet khác trong cùng Workbook
+C: Worksheet trong Workbook khác đang mở
+D: Worksheet trong file .xlsx bất kỳ
+ANS: D
+EXP: Advanced Filter chỉ xuất kết quả trong Workbook hiện hành; không thể xuất sang file .xlsx khác đang đóng.
+
+Q: Với MS-Excel, muốn xuất kết quả lọc ra vùng khác thì trong hộp thoại Advanced Filter cần thực hiện ít nhất mấy khai báo?
+A: 1
+B: 2
+C: 3
+D: Trên 3
+ANS: C
+EXP: Cần khai báo ít nhất 3 thông tin: List range (vùng dữ liệu), Criteria range (vùng tiêu chí), Copy to (vùng xuất kết quả).
+
+Q: Với Advanced Filter, muốn xuất kết quả sang vùng khác thì vùng xuất cần có điều kiện gì?
+A: Đủ các tiêu đề cột giống vùng dữ liệu nguồn
+B: Thứ tự các tiêu đề cột giống vùng dữ liệu nguồn
+C: Định dạng các tiêu đề cột giống vùng dữ liệu nguồn
+D: Các tiêu đề cột xếp liền kề nhau
+ANS: D
+EXP: Vùng xuất chỉ cần các tiêu đề cột xếp liền kề nhau (không cần đủ, không cần đúng thứ tự, không cần giống định dạng).
+
+Q: Với Advanced Filter, muốn xuất kết quả sang Worksheet khác thì thao tác kế tiếp sau khi chuẩn bị vùng xuất và tiêu chí là gì?
+A: Đặt con trỏ ô trong vùng dữ liệu nguồn
+B: Chọn vùng dữ liệu nguồn
+C: Mở hộp thoại Advanced Filter
+D: Kích hoạt Worksheet đích trước khi mở hộp thoại Advanced Filter
+ANS: D
+EXP: Khi xuất sang Worksheet khác, phải kích hoạt (chọn) Worksheet đích trước, rồi từ đó mở hộp thoại Advanced Filter và khai báo vùng nguồn.
+
+Q: Phát biểu nào sau đây là sai về Pivot Table trong MS-Excel?
+A: Là công cụ dùng để tổng hợp, lọc, phân tích dữ liệu theo nhiều cách khác nhau
+B: Thao tác tiện lợi, hầu hết chỉ là kéo thả và chọn
+C: Có thể chèn vào 1 vùng trống của Worksheet chứa dữ liệu hoặc 1 Worksheet mới
+D: Pivot Table chỉ tính tổng giá trị dữ liệu
+ANS: D
+EXP: Pivot Table không chỉ tính tổng mà còn có thể đếm, tính trung bình, tìm min/max, tính phần trăm và nhiều loại tổng hợp khác.
+
+Q: Với MS-Excel, muốn tạo Pivot Table thì chọn lệnh từ tab nào?
+A: Home
+B: Insert
+C: Formulas
+D: Data
+ANS: B
+EXP: Lệnh PivotTable nằm trong nhóm Tables của tab Insert.
+
+Q: Với MS-Excel, có thể bố trí các tên field vào mấy khu vực trong vùng PivotTable Fields List?
+A: 2
+B: 3
+C: 4
+D: Trên 4
+ANS: C
+EXP: Có 4 khu vực: Filters, Columns, Rows, Values.
+
+Q: Không thể tạo biểu đồ (Chart) trong MS-Excel bằng cách nào?
+A: Tab Insert
+B: Trình đơn ngữ cảnh (Context Menu – Right-click)
+C: Phím F11
+D: Tổ hợp phím Alt+F1
+ANS: B
+EXP: Không thể tạo Chart mới từ Context Menu (right-click). Chart tạo được từ tab Insert, F11 (tạo chart sheet mới), hoặc Alt+F1 (tạo chart nhúng vào sheet).
+
+Q: Phát biểu nào sau đây là không đúng về biểu đồ (Chart) trong MS-Excel?
+A: Là công cụ dùng để minh họa số liệu bằng hình vẽ
+B: Dữ liệu để tạo mỗi biểu đồ phải được bố trí trong cùng 1 Worksheet
+C: Có nhiều kiểu để giúp minh họa số liệu theo nhiều cách
+D: Có thể kết hợp nhiều kiểu biểu đồ trong cùng 1 khung hình
+ANS: B
+EXP: Dữ liệu cho biểu đồ không nhất thiết phải trong cùng 1 worksheet; có thể lấy từ nhiều worksheet khác nhau.
+
+Q: Với MS-Excel, muốn minh họa số liệu dạng % thì có thể sử dụng biểu đồ kiểu nào là hợp lý nhất?
+A: Column
+B: Area
+C: Line
+D: Pie
+ANS: D
+EXP: Biểu đồ Pie (hình tròn) phù hợp nhất để thể hiện tỷ lệ phần trăm của các thành phần trong tổng thể.
+
+Q: Với MS-Excel, khi biểu đồ đã được tạo thì không thể làm điều nào?
+A: Thay đổi phạm vi dữ liệu cho biểu đồ
+B: Chuyển đổi kiểu biểu đồ
+C: Chỉnh sửa bố cục của biểu đồ
+D: Xóa biểu đồ bằng cách xóa dữ liệu
+ANS: D
+EXP: Xóa dữ liệu nguồn không xóa biểu đồ; biểu đồ vẫn còn đó (chỉ hiển thị trống hoặc lỗi). Phải xóa trực tiếp đối tượng biểu đồ.
+
+Q: Với MS-Excel, có thể chèn các dạng đối tượng đồ họa khi truy cập vào tab nào?
+A: Home
+B: Insert
+C: Page Layout
+D: View
+ANS: B
+EXP: Tab Insert chứa các lệnh chèn đối tượng đồ họa: Picture, Shape, SmartArt, Chart...
+
+Q: Với MS-Excel, muốn sử dụng 1 file hình ảnh để làm nền cho worksheet thì chọn nút Background từ tab nào?
+A: Home
+B: Insert
+C: Page Layout
+D: View
+ANS: C
+EXP: Nút Background nằm trong nhóm Page Setup của tab Page Layout.
+
+Q: Với MS-Excel, không thể mở Selection Pane từ tab nào?
+A: Home
+B: Page Layout
+C: View
+D: Format
+ANS: C
+EXP: Tab View không có lệnh mở Selection Pane trong Excel. Có thể mở từ Home, Page Layout, hoặc tab Format (khi chọn đối tượng).
+
+Q: Selection Pane trong MS-Excel không hỗ trợ điều nào?
+A: Chọn 1 hoặc nhiều đối tượng đồ họa
+B: Cho ẩn/hiện các đối tượng đồ họa
+C: Cho ẩn/hiện dữ liệu trong các ô
+D: Chỉnh trật tự xếp chồng giữa các đối tượng đồ họa
+ANS: C
+EXP: Selection Pane chỉ quản lý các đối tượng đồ họa, không ẩn/hiện dữ liệu trong ô.
+
+Q: Với đối tượng Picture trong MS-Excel thì không thể tùy chỉnh thuộc tính nào?
+A: Màu (color)
+B: Độ trong suốt (Transparency)
+C: Độ nét (sharpness)
+D: Độ sáng (brightness)
+ANS: B
+EXP: MS-Excel không hỗ trợ tùy chỉnh Transparency (độ trong suốt) trực tiếp cho Picture trong hộp Format Picture thông thường.
+
+Q: Với đối tượng Picture trong MS-Excel thì không thể làm điều nào?
+A: Xén bớt (crop) phạm vi
+B: Làm trong suốt 1 số vùng màu
+C: Áp dụng các hiệu ứng Artistic Effects, Shadow, Reflection, Glow, Soft Edges…
+D: Làm khung chứa để nhập text
+ANS: D
+EXP: Picture không thể hoạt động như Text Box để nhập văn bản vào trong.
+
+Q: Với MS-Excel, tab Format sẽ có nút Remove Background khi loại đối tượng nào được chọn?
+A: Chart
+B: Shape
+C: Text Box
+D: Picture
+ANS: D
+EXP: Nút Remove Background chỉ xuất hiện trong tab Format khi chọn đối tượng Picture.
+
+Q: Với MS-Excel, trường hợp nào sau đây không thể làm hình ảnh trong suốt?
+A: Sử dụng nút Remove Background
+B: Sử dụng lệnh Set Transparent Color
+C: Sử dụng hình ảnh làm nền cho worksheet
+D: Sử dụng hình ảnh làm thuộc tính fill cho các shape
+ANS: C
+EXP: Khi dùng hình ảnh làm nền worksheet (Page Layout > Background), không thể chỉnh độ trong suốt.
+
+Q: MS-Excel không cho sử dụng chức năng Edit Shape khi chọn loại shape nào?
+A: Text Box
+B: Các loại Connector (đường nối)
+C: Các loại Brace, Bracket (ngoặc)
+D: Các loại Shape khác
+ANS: B
+EXP: Các Connector (đường nối giữa các shape) không hỗ trợ chức năng Edit Shape.
+
+Q: Với chức năng Edit Shape trong MS-Excel, ngoài Edit Points còn có thể làm gì?
+A: Áp dụng hiệu ứng cho Shape
+B: Chuyển đổi dạng Shape
+C: Chuyển Shape thành Picture
+D: Chuyển Shape thành SmartArt
+ANS: B
+EXP: Edit Shape có lệnh "Change Shape" để chuyển sang dạng shape khác.
+
+Q: Khi dùng Edit Points để chỉnh Shape trong MS-Excel, muốn bổ sung Point thì click tại vị trí muốn thêm kết hợp với phím nào?
+A: Shift
+B: Alt
+C: Ctrl
+D: Space bar
+ANS: C
+EXP: Ctrl+Click lên đường biên của Shape để thêm Point mới.
+
+Q: Khi dùng Edit Points để chỉnh Shape trong MS-Excel, muốn xóa Point thì click tại Point kết hợp với phím nào?
+A: Shift
+B: Alt
+C: Ctrl
+D: Space bar
+ANS: C
+EXP: Ctrl+Click vào Point hiện có để xóa nó.
+
+Q: Khi dùng Edit Points, nếu right-click tại 1 Point thì Context Menu liệt kê bao nhiêu mục chọn?
+A: 4
+B: 5
+C: 6
+D: Trên 6
+ANS: D
+EXP: Context Menu khi right-click lên Point có nhiều hơn 6 mục chọn.
+
+Q: Về Edit Points để chỉnh dạng Shape trong MS-Excel, phát biểu nào sau đây là sai?
+A: Có thể bổ sung, xóa hoặc chỉnh vị trí Point
+B: Có thể chuyển đổi giữa các thuộc tính Point (Smooth Point, Straight Point, Corner Point)
+C: Không thể chuyển đổi path kín (Close Path) thành hở (Open Path) hoặc ngược lại
+D: Không thể xử lý để Shape còn dưới 2 point
+ANS: C
+EXP: Thực ra có thể chuyển đổi giữa Close Path và Open Path qua Context Menu, nên phát biểu C là sai.
+
+Q: Khi xác lập thuộc tính fill cho shape trong MS-Excel, không thể tùy chỉnh độ trong suốt đối với loại fill nào?
+A: Màu đồng nhất (solid color)
+B: Màu chuyển sắc (gradient color)
+C: Mẫu texture
+D: Mẫu pattern
+ANS: D
+EXP: Pattern fill không hỗ trợ tùy chỉnh độ trong suốt (Transparency).
+
+Q: Khi chỉnh size cho đối tượng trong MS-Excel, muốn kích cỡ co dãn đối xứng qua tâm thì drag các núm kết hợp với phím nào?
+A: Ctrl
+B: Alt
+C: Shift
+D: Space bar
+ANS: A
+EXP: Giữ Ctrl khi kéo núm chỉnh để co dãn đối xứng qua tâm đối tượng.
+
+Q: Với MS-Excel, muốn tạo siêu liên kết (Hyperlink) cho đối tượng được chọn thì có thể sử dụng tổ hợp phím nào?
+A: Ctrl+I
+B: Ctrl+H
+C: Ctrl+L
+D: Ctrl+K
+ANS: D
+EXP: Ctrl+K mở hộp thoại Insert Hyperlink trong MS-Excel.
+
+Q: Với MS-Excel, muốn gỡ siêu liên kết (Hyperlink) thì không thể làm theo cách nào?
+A: Chọn lệnh từ tab Insert
+B: Chọn lệnh từ trình đơn ngữ cảnh (Context Menu)
+C: Sử dụng tổ hợp phím Ctrl+K
+D: Xóa thành phần được liên kết với đối tượng
+ANS: D
+EXP: Xóa thành phần được liên kết (file, trang web...) không tự động gỡ hyperlink trong ô/đối tượng Excel.
+
+Q: Với MS-Excel, muốn tạo Comment cho một ô thì có thể sử dụng phím nào?
+A: F2
+B: Shift+F2
+C: Ctrl+F2
+D: Alt+F2
+ANS: B
+EXP: Shift+F2 mở hộp để chèn hoặc chỉnh sửa Comment cho ô đang chọn.
+
+Q: Với MS-Excel, muốn tạo Comment cho một ô thì có thể chọn lệnh từ tab nào?
+A: Home
+B: Insert
+C: Review
+D: View
+ANS: C
+EXP: Lệnh New Comment/Insert Comment nằm trong nhóm Comments của tab Review.
+
+Q: Với Comment trong MS-Excel thì điều nào sau đây đúng?
+A: Không thể cùng lúc cho hiện/ẩn tất cả
+B: Không thể sao chép riêng comment từ ô này sang ô khác
+C: Không thể đổi dạng khung chứa nội dung comment
+D: Không thể chèn hình ảnh nhưng có thể sử dụng hình ảnh làm thuộc tính fill cho khung chứa nội dung comment
+ANS: D
+EXP: Comment không hỗ trợ chèn hình ảnh trực tiếp vào nội dung, nhưng có thể dùng hình ảnh làm fill cho khung chứa comment thông qua Format Comment > Fill Effects.

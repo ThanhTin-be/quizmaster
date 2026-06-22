@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import type { Deck, Question } from '../types';
-import { ArrowLeft, CheckCircle2, XCircle, Award, RefreshCw, Star } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, XCircle, Award, RefreshCw, Star, Shuffle } from 'lucide-react';
+import { buildShuffleMap } from '../utils/shuffleOptions';
 
 interface QuizViewProps {
   deck: Deck;
@@ -17,6 +18,13 @@ export const QuizView: React.FC<QuizViewProps> = ({ deck, onSaveProgress, onBack
   // Quiz score keeping
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
+  
+  // Shuffle key: tăng lên mỗi lần restart để tạo shuffle mới
+  const [shuffleKey, setShuffleKey] = useState(0);
+
+  // Tính trước shuffle cho toàn bộ câu hỏi (1 lần mỗi session)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const shuffleMaps = useMemo(() => buildShuffleMap(deck.questions), [deck.questions, shuffleKey]);
 
   const questions = deck.questions;
   const currentQuestion: Question | undefined = questions[currentIndex];
@@ -28,7 +36,9 @@ export const QuizView: React.FC<QuizViewProps> = ({ deck, onSaveProgress, onBack
     setIsAnswered(true);
 
     const questionId = currentQuestion.id;
-    const isCorrect = optionLabel === currentQuestion.correctAnswer;
+    // So sánh với correctDisplayLabel (nhãn hiển thị của đáp án đúng sau khi shuffle)
+    const currentShuffle = shuffleMaps[currentIndex];
+    const isCorrect = optionLabel === currentShuffle.correctDisplayLabel;
 
     let nextCorrect = [...deck.progress.correctQuestions];
     let nextWrong = [...deck.progress.wrongQuestions];
@@ -82,6 +92,8 @@ export const QuizView: React.FC<QuizViewProps> = ({ deck, onSaveProgress, onBack
     setIsAnswered(false);
     setScore(0);
     setIsFinished(false);
+    // Tăng shuffleKey để tạo shuffle mới cho session mới
+    setShuffleKey(prev => prev + 1);
   };
 
   if (questions.length === 0) {
@@ -143,6 +155,8 @@ export const QuizView: React.FC<QuizViewProps> = ({ deck, onSaveProgress, onBack
   }
 
   const isStarred = starredIds.includes(currentQuestion.id);
+  // Lấy thông tin shuffle cho câu hỏi hiện tại
+  const currentShuffle = shuffleMaps[currentIndex];
 
   return (
     <div className="fade-in-up" style={styles.container}>
@@ -166,6 +180,7 @@ export const QuizView: React.FC<QuizViewProps> = ({ deck, onSaveProgress, onBack
           <div style={styles.cardHeader}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <div style={styles.scoreBadge}>ĐIỂM SỐ: {score}/{currentIndex + (isAnswered ? 1 : 0)}</div>
+              <div style={styles.shuffleBadge}><Shuffle size={10} style={{ marginRight: 4 }} />Đáp án ngẫu nhiên</div>
               {currentQuestion.isSolvedByAi && (
                 <div style={styles.aiBadge}>🤖 AI tự giải</div>
               )}
@@ -184,22 +199,17 @@ export const QuizView: React.FC<QuizViewProps> = ({ deck, onSaveProgress, onBack
             {currentQuestion.question}
           </div>
 
-          {/* Options Grid */}
+          {/* Options Grid - dùng shuffledOptions thay vì options gốc */}
           <div style={styles.optionsList}>
-            {currentQuestion.options.map((option, i) => {
-              // Extract label (A, B, C, D...) from option string
-              // Usually the option starts with "A. " or "A) "
-              const cleanOption = option.trim();
-              const optionLabel = cleanOption.charAt(0); // A, B, C, D...
-
+            {currentShuffle.shuffledOptions.map((option, i) => {
+              const optionLabel = option.trim().charAt(0); // Nhãn hiển thị mới: A, B, C, D
               const isSelected = selectedOption === optionLabel;
-              const isCorrectAnswer = optionLabel === currentQuestion.correctAnswer;
+              const isCorrectAnswer = optionLabel === currentShuffle.correctDisplayLabel;
               
               let btnStyle = { ...styles.optionButton };
               
               if (isAnswered) {
                 if (isCorrectAnswer) {
-                  // highlight green
                   btnStyle = {
                     ...btnStyle,
                     borderColor: 'rgba(16, 185, 129, 0.5)',
@@ -207,7 +217,6 @@ export const QuizView: React.FC<QuizViewProps> = ({ deck, onSaveProgress, onBack
                     color: 'var(--text-primary)',
                   };
                 } else if (isSelected) {
-                  // highlight red
                   btnStyle = {
                     ...btnStyle,
                     borderColor: 'rgba(239, 68, 68, 0.5)',
@@ -215,7 +224,6 @@ export const QuizView: React.FC<QuizViewProps> = ({ deck, onSaveProgress, onBack
                     color: 'var(--text-primary)',
                   };
                 } else {
-                  // muted
                   btnStyle = {
                     ...btnStyle,
                     opacity: 0.5,
@@ -269,15 +277,15 @@ export const QuizView: React.FC<QuizViewProps> = ({ deck, onSaveProgress, onBack
                   borderColor: selectedOption === currentQuestion.correctAnswer ? 'rgba(16, 185, 129, 0.1)' : 'rgba(239, 68, 68, 0.1)',
                 }}
               >
-                {selectedOption === currentQuestion.correctAnswer ? (
+                {selectedOption === currentShuffle.correctDisplayLabel ? (
                   <>
                     <CheckCircle2 size={16} color="#10b981" />
-                    <strong>Chính xác! Đáp án đúng là {currentQuestion.correctAnswer}.</strong>
+                    <strong>Chính xác! Đáp án đúng là {currentShuffle.correctDisplayLabel}.</strong>
                   </>
                 ) : (
                   <>
                     <XCircle size={16} color="#ef4444" />
-                    <strong>Chưa đúng! Đáp án đúng là {currentQuestion.correctAnswer}.</strong>
+                    <strong>Chưa đúng! Đáp án đúng là {currentShuffle.correctDisplayLabel}.</strong>
                   </>
                 )}
               </div>
@@ -373,6 +381,17 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '4px 10px',
     borderRadius: '6px',
     letterSpacing: '0.05em',
+  },
+  shuffleBadge: {
+    fontSize: 10,
+    fontWeight: 700,
+    background: 'rgba(99, 102, 241, 0.08)',
+    color: '#818cf8',
+    border: '1px solid rgba(99, 102, 241, 0.2)',
+    padding: '3px 8px',
+    borderRadius: '6px',
+    display: 'flex',
+    alignItems: 'center',
   },
   aiBadge: {
     fontSize: 9,
